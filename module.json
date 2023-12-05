@@ -1,7 +1,7 @@
 {
     "id": "lfd-lookfar-gm-assistant",
     "title": "Lookfar GM Assistant for Fabula Ultima TTRPG in Foundry VTT",
-    "description": "A module to assist the GM with Travel Rolls, Reward Budgets, and other cognitive-intensive tasks. For use with the Fabula Ultima game system.",
+    "description": "A module to assist the GM cognitive-intensive tasks and random generation. For use with the Fabula Ultima game system.",
     "version": "#{VERSION}#",
     "library": "false",
     "manifestPlusVersion": "1.2.0",
@@ -26,7 +26,9 @@
     "esmodules": [],
     "scripts": [
         "scripts/lib/lib.js",
-        "scripts/travel-roll.js"
+        "scripts/travel-roll.js",
+        "scripts/reward-budget.js",
+        "scripts/spiceupmyfight.js"
     ],
     "styles": [
         "static/style.css"

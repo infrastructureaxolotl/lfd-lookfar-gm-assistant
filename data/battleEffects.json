@@ -1,0 +1,90 @@
+{
+    "element": [
+        {
+            "item": "fire"
+        },
+        {
+            "item": "water"
+        },
+        {
+            "item": "earth"
+        },
+        {
+            "item": "air"
+        },
+        {
+            "item": "bolt"
+        },
+        {
+            "item": "ice"
+        },
+        {
+            "item": "light"
+        },
+        {
+            "item": "dark"
+        }
+    ],
+    "actions": [
+        {
+            "item": "Attack"
+        },
+        {
+            "item": "Guard"
+        },
+        {
+            "item": "Spell"
+        },
+        {
+            "item": "Equipment"
+        },
+        {
+            "item": "Objective"
+        }
+    ],
+    "gimmick": [
+        {
+            "item": "Defenders: Choose 1 or 2 enemies, or create a Clock - PCs cannot target other enemies until they are dealt with."
+        },
+        {
+            "item": "Waves: Any time a group of enemies is defeated, it is replaced by another enemy group at the end of the round. This occurs condition until a condition is met, or a target is met. The goal is for players to make interesting decisions about when to defeat an enemy or not. Adjust difficulty or allow Rest between rounds."
+        },
+        {
+            "item": "Reinforcements: At the end of each round, a new enemy appears to replace any that were defeated. This occurs until a condition is met, or a target is met. They should be lower level than usual. The goal is for players to manage enemies while accomplish some other objective that will stop further reinforcements."
+        },
+        {
+            "item": "Sequence: The PCs must perform actions or damage types in a specific order to defeat an enemy, or disable their most powerful abilities."
+        },
+        {
+            "item": "Action Immunity: The PCs cannot use a specific action type against an enemy, or the enemy can only be made vulnerable by using a specific Action. This can be used to force players to use different tactics, or to make a specific enemy more difficult."
+        }
+    ],
+    "target": [
+        "PCs",
+        "Enemies",
+        "All creatures"
+    ],
+    "environment": [
+        {
+            "item": "{Target} gains {element}: RES and {element} VUL."
+        },
+        {
+            "item": "At the end of each round, the environment deals {threats.damage.level} {element} to {target}."
+        },
+        {
+            "item": "At the end of each round, {target} become {statusEffects}."
+        },
+        {
+            "item": "At the end of each round, {target} lose {threats.damage.level} MP."
+        },
+        {
+            "item": "At the end of each round, {target} that performed the {actions} Action takes {threads.damage.level} damage."
+        },
+        {
+            "item": "Whenever an action deals {element} damage, {target} become {statusEffects}."
+        },
+        {
+            "item": "Whenever an action deals {element} damage, {target} receive {threats.damage.level} {element} damage."
+        }
+    ]
+}

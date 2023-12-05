@@ -113,12 +113,6 @@ Hooks.once("init", async () => {
         showTravelCheckDialog();
       });
 
-      // Optionally, add custom CSS if needed
-      let css = `
-        #floating-travel-check-button {
-          // Add your styling here, if needed
-        }
-      `;
       $("head").append(`<style>${css}</style>`);
     }
   });
@@ -143,7 +137,7 @@ function showTravelCheckDialog() {
     },
     buttons: {
       roll: {
-        icon: '<i class="fas fa-check"style="color: white"></i>',
+        icon: '<i class="fas fa-check" style="color: white"></i>',
         label: '<span style="color: white;">Roll</span>',
         callback: (html) => {
           const selectedDifficulty = html
@@ -289,7 +283,7 @@ function showRerollDialog(initialResult, selectedDifficulty, groupLevel) {
     content: `<p>Current Result: ${initialResult}</p><p>Do you want to keep this result or reroll?</p>`,
     buttons: {
       keep: {
-        icon: '<i class="fas fa-check"></i>',
+        icon: '<i class="fas fa-check" style="color: white></i>',
         label: '<span style="color: white;">Keep Result</span>',
         callback: () => {
           // Determine visibility
@@ -311,7 +305,7 @@ function showRerollDialog(initialResult, selectedDifficulty, groupLevel) {
         },
       },
       reroll: {
-        icon: '<i class="fas fa-redo"></i>',
+        icon: '<i class="fas fa-redo" style="color: white></i>',
         label: '<span style="color: white;">Reroll Result</span>',
         callback: () => {
           const newDangerResult = generateDanger(groupLevel);
