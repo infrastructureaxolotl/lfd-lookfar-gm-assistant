@@ -31,7 +31,7 @@
         "scripts/spiceupmyfight.js"
     ],
     "styles": [
-        "static/style.css"
+        "styles/style.css"
     ],
     "languages": [],
     "url": "#{URL}#",
