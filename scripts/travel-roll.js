@@ -112,8 +112,6 @@ Hooks.once("init", async () => {
         ev.preventDefault();
         showTravelCheckDialog();
       });
-
-      $("head").append(`<style>${css}</style>`);
     }
   });
 });
