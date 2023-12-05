@@ -10,12 +10,12 @@ Please note that licensed Fabula Ultima content is not provided with this system
 
 ## Features:
 
-    -- Travel Check: This feature adds a travel button to your tools UI, allowing the Gamemaster to perform a Travel Check, and generate dangers and discoveries. The popup will suggest keywords, effects, and sources of danger to make improv easier if you didn't have something planned.
-    -- Customizable Settings: GMs can adjust settings like group level, or travel roll visibility if they want the group to participate in the Travel Roll too.
-    -- Wayfarer Skills: These settings influence the dice rolls for travel checks, allowing for discoveries and easier travel based on character traits.
-    -- You will also be able to enter text to make sure your Wayfarer gets credit everytime. You don't want your players to forget how much their Wayfarer rocks!
-    -- WIP: Currency Tracker: A tool for GMs to keep track of the money or value of items distributed during the session, and to help them manage reward budgets better.
-    -- WIP: Battle Generator: Oh no do you need a random battle you didn't plan for? The battle generator will let you generate a combat and give you some ideas of how you might make it a bit more interesting.
+- **Travel Check:** This feature adds a travel button to your tools UI, allowing the Gamemaster to perform a Travel Check, and generate dangers and discoveries. The popup will suggest keywords, effects, and sources of danger to make improv easier if you didn't have something planned.
+- **Customizable Settings:** GMs can adjust settings like group level, or travel roll visibility if they want the group to participate in the Travel Roll too.
+- **Wayfarer Skills:** These settings influence the dice rolls for travel checks, allowing for discoveries and easier travel based on character traits. You will also be able to enter text to make sure your Wayfarer gets credit every time. You don't want your players to forget how much their Wayfarer rocks!
+- **WIP: Currency Tracker:** A tool for GMs to keep track of the money or value of items distributed during the session, and to help them manage reward budgets better.
+- **WIP: Battle Generator:** Oh no, do you need a random battle you didn't plan for? The battle generator will let you generate a combat and give you some ideas of how you might make it a bit more interesting.
+
 
 ## Feedback
 
