@@ -26,7 +26,7 @@ Hooks.once("init", async () => {
   // Load the threats data
   await loadData();
   $(
-    `<link rel="stylesheet" type="text/css" href="/modules/lfd-lookfar-gm-assistant/static/style.css">`
+    `<link rel="stylesheet" type="text/css" href="/modules/lfd-lookfar-gm-assistant/styles/style.css">`
   ).appendTo("head");
 
   // Register the game setting

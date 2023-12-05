@@ -30,7 +30,7 @@ async function loadData() {
 Hooks.once("init", async () => {
   await loadData();
   $(
-    `<link rel="stylesheet" type="text/css" href="/modules/lfd-lookfar-gm-assistant/static/style.css">`
+    `<link rel="stylesheet" type="text/css" href="/modules/lfd-lookfar-gm-assistant/styles/style.css">`
   ).appendTo("head");
 
   Hooks.on("renderApplication", (app, html, data) => {
