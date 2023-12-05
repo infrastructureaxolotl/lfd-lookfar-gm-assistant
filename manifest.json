@@ -7,6 +7,6 @@
     "minimumCoreVersion": "10.312",
     "author": "why Cookie Rocket",
     "url": "https://github.com/infrastructureaxolotl/lfd-lookfar-gm-assistant",
-    "manifest": "",
-    "download": ""
+    "manifest": "https://raw.githubusercontent.com/infrastructureaxolotl/lfd-lookfar-gm-assistant/main/manifest.json",
+    "download": "https://github.com/infrastructureaxolotl/lfd-lookfar-gm-assistant/releases/download/alpha/lfd-lookfar-gm-assistant.zip"
 }
