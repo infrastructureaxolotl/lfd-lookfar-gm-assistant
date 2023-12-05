@@ -2,7 +2,7 @@
 
 ![fu-sitecover.jpg](https://trello.com/1/cards/64db0994c4a8791322c8b2e2/attachments/64f476a7f1dc332714f44c8c/download/fu-sitecover.jpg)
 
-Hello and welcome to Lookfar GM Assistant, a module for {Foundry VTT}(<https://foundryvtt.com/>). This module is designed to make being Gamemaster easier while playing [Fabula Ultima](https://www.needgames.it/fabula-ultima-en/) by [Need Games](https://www.needgames.it/).
+Hello and welcome to Lookfar GM Assistant, a module for [Foundry VTT](<https://foundryvtt.com/>). This module is designed to make being Gamemaster easier while playing [Fabula Ultima](https://www.needgames.it/fabula-ultima-en/) by [Need Games](https://www.needgames.it/).
 
 Please note that licensed Fabula Ultima content is not provided with this system. As an endeavour of the League of Fabulous Developers, this module adheres to RoosterEma's guidelines and strives to ensure that the core book and supplements remain essential to player and GM experience.
 
