@@ -25,6 +25,7 @@
     },
     "esmodules": [],
     "scripts": [
+        "scripts/lib/lib.js",
         "scripts/travel-roll.js",
         "scripts/reward-budget.js",
         "scripts/spiceupmyfight.js"
