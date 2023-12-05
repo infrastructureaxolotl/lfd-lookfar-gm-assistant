@@ -16,7 +16,7 @@ Please note that licensed Fabula Ultima content is not provided with this system
 - **WIP: Currency Tracker:** A tool for GMs to keep track of the money or value of items distributed during the session, and to help them manage reward budgets better.
 - **WIP: Battle Generator:** Oh no, do you need a random battle you didn't plan for? The battle generator will let you generate a combat and give you some ideas of how you might make it a bit more interesting.
 
-Install: https://github.com/<user>/<repo>/releases/latest/download/module.json
+Install: https://github.com/infrastructureaxolotl/lfd-lookfar-gm-assistant/releases/download/v0.5.0-alpha-prerelease/module.json
 
 ## Feedback
 
