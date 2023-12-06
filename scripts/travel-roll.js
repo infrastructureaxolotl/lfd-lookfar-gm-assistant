@@ -1,13 +1,11 @@
 import { dataLoader } from "./dataLoader.js";
 
 Hooks.once("init", async () => {
-  // Load the threats data
   await dataLoader.loadData();
   $(
     `<link rel="stylesheet" type="text/css" href="/modules/lfd-lookfar-gm-assistant/styles/style.css">`
   ).appendTo("head");
 
-  // Register the game setting
   game.settings.register("lfd-lookfar-gm-assistant", "groupLevel", {
     name: "Group Level",
     hint: "Set the group level for generating dangers.",
@@ -35,7 +33,6 @@ Hooks.once("init", async () => {
     default: "public",
   });
 
-  // Register "Treasure Hunter: Level" setting
   game.settings.register("lfd-lookfar-gm-assistant", "treasureHunterLevel", {
     name: "Treasure Hunter: Level",
     hint: "Modify the chance of discovery based on the level of Treasure Hunter skill.",
@@ -50,7 +47,6 @@ Hooks.once("init", async () => {
     default: 0,
   });
 
-  // Register "Well-Traveled" setting
   game.settings.register("lfd-lookfar-gm-assistant", "wellTraveled", {
     name: "Well-Traveled",
     hint: "Check this if the party has the Well-Traveled trait, reducing travel roll difficulty.",
@@ -60,7 +56,6 @@ Hooks.once("init", async () => {
     default: false,
   });
 
-  // Register text field for character name or message
   game.settings.register("lfd-lookfar-gm-assistant", "characterMessage", {
     name: "Character/Skill Message",
     hint: "Enter text that will display whenever the Travel Roll is affected by your group's Wayfarer.",
@@ -75,17 +70,14 @@ Hooks.once("init", async () => {
       // Create an icon element for the button
       let icon = $('<i class="fa-solid fa-person-hiking"></i>');
 
-      // Create a list item with the class 'control-tool' and append the icon to it
       let listItem = $(
         '<li class="control-tool" id="floating-travel-check-button" title="Make a Travel Check"></li>'
       ).append(icon);
 
-      // Append the list item to the specified location
       $(
         "#interface > #ui-left > #controls > ol.sub-controls.app.control-tools.flexcol.active"
       ).append(listItem);
 
-      // Add click event listener to the list item
       listItem.click((ev) => {
         ev.preventDefault();
         showTravelCheckDialog();

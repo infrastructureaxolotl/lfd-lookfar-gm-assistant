@@ -75,6 +75,9 @@
         },
         {
             "item": "'Attack from Above:' The enemies are attacking from above! For the duration of the battle, select one or more enemies to gain Flying. If an enemy loses flying, they take {threats.damage.level} damage and cannot gain Flying again."
+        },
+        {
+            "item": "Stand Behind Me: At the start of each round, the group nominates one player to gain use of the Protect Skill (Guardian) for that round. This represents some object or terrain feature."
         }
     ],
     "target": [

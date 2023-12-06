@@ -6,9 +6,6 @@ function getGroupLevel() {
 
 Hooks.once("init", async () => {
   await dataLoader.loadData();
-  $(
-    `<link rel="stylesheet" type="text/css" href="/modules/lfd-lookfar-gm-assistant/styles/style.css">`
-  ).appendTo("head");
 
   Hooks.on("renderApplication", (app, html, data) => {
     if (!document.getElementById("floating-fightSpice-button")) {
@@ -77,10 +74,7 @@ Hooks.once("init", async () => {
       .replace(/{actions}/g, () =>
         getRandomItem(dataLoader.battleEffectsData.actions)
       )
-      .replace(
-        /{statusEffects}/g,
-        dataLoader.randomStatusEffect || "No Status Effect"
-      );
+      .replace(/{statusEffects}/g, randomStatusEffect || "No Status Effect");
 
     if (effectWithReplacements.includes("{threats.damage.level}")) {
       const damageLevel =
