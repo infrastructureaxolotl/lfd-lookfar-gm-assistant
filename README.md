@@ -8,13 +8,14 @@ Please note that licensed Fabula Ultima content is not provided with this system
 
 **Note:** This module is a WIP and can change at any time. As of v0.5.0 it doesn't require any specific Fabula Ultima system.
 
-## Features:
+| Features               |                                                                                                                                                          |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Travel Roll Helper** | Adds a travel button to tools UI for Gamemasters to perform Travel Checks, generate dangers and discoveries. Includes a popup with suggestions for improv, located by the hiker icon in the tools menu. |
+| **_Customizable Settings_** | Allows GMs to adjust settings like group level and travel roll visibility for group participation in Travel Rolls.                                                           |
+| **_Wayfarer Skills_**      | Influences dice rolls for travel checks, based on character traits. Enables text entry to credit Wayfarers in game, highlighting their importance.                            |
+| **WIP: Currency Tracker**  | A tool for GMs to track money or item values distributed during sessions, aiding in reward budget management.                                                                 |
+| **Spice Up My Fight**      | Generates obstacles, gimmicks, or environmental effects to enhance fights. Damage scales with Group Level, set in settings. Identified by the pepper icon in the tools menu.   |
 
-- **Travel Roll Helper:** This feature adds a travel button to your tools UI, allowing the Gamemaster to perform a Travel Check, and generate dangers and discoveries. The popup will suggest keywords, effects, and sources of danger to make improv easier if you didn't have something planned.
-- **_Customizable Settings:_** GMs can adjust settings like group level, or travel roll visibility if they want the group to participate in the Travel Roll too.
-- **_Wayfarer Skills:_** These settings influence the dice rolls for travel checks, allowing for discoveries and easier travel based on character traits. You will also be able to enter text to make sure your Wayfarer gets credit every time. You don't want your players to forget how much their Wayfarer rocks!
-- **WIP: Currency Tracker:** A tool for GMs to keep track of the money or value of items distributed during the session, and to help them manage reward budgets better.
-- **WIP: Add Spice to My Fight:** Looking for a way to make your fight a little bit more interesting? Use this tool to generate an obstacle, gimmick, or environmental effect to add some spice.
 
 Install: https://github.com/infrastructureaxolotl/lfd-lookfar-gm-assistant/releases/download/v0.5.0-alpha-prerelease/module.json
 
