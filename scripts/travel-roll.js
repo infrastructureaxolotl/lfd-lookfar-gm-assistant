@@ -1,34 +1,8 @@
-let threatsData = {};
-let fluffData = {};
-let discoveryData = {};
-
-async function loadData() {
-  try {
-    const threatsResponse = await fetch(
-      "/modules/lfd-lookfar-gm-assistant/data/data.json"
-    );
-    threatsData = await threatsResponse.json();
-    console.log("Loaded threats data successfully.");
-
-    const fluffResponse = await fetch(
-      "/modules/lfd-lookfar-gm-assistant/data/fluff.json"
-    );
-    fluffData = await fluffResponse.json();
-    console.log("Loaded fluff data successfully.");
-
-    const discoveryResponse = await fetch(
-      "/modules/lfd-lookfar-gm-assistant/data/discoveries.json"
-    );
-    discoveryData = await discoveryResponse.json();
-    console.log("Loaded discoveries data successfully.");
-  } catch (error) {
-    console.error("Error loading data:", error);
-  }
-}
+import { dataLoader } from "./dataLoader.js";
 
 Hooks.once("init", async () => {
   // Load the threats data
-  await loadData();
+  await dataLoader.loadData();
   $(
     `<link rel="stylesheet" type="text/css" href="/modules/lfd-lookfar-gm-assistant/styles/style.css">`
   ).appendTo("head");
@@ -227,7 +201,7 @@ async function handleRoll(selectedDifficulty) {
       });
     }
   }
-
+  //why was R capitalized?
   let roll = new Roll(selectedDifficulty);
   await roll.roll();
 
@@ -270,14 +244,15 @@ async function handleRoll(selectedDifficulty) {
     resultMessage = "The travel day passed without incident.";
   }
 
-  // Show the reroll dialog but do not send the message to chat yet
   showRerollDialog(resultMessage, selectedDifficulty, groupLevel);
 }
 
-// Ensure that 'showRerollDialog' sends the message to chat only when 'Keep Result' is selected
 function showRerollDialog(initialResult, selectedDifficulty, groupLevel) {
+  let isDanger = initialResult.includes("Danger!");
+  let title = isDanger ? "Confirm Danger Result" : "Confirm Discovery Result";
+
   let d = new Dialog({
-    title: "Confirm Danger Result",
+    title: title,
     render: (html) => {
       html.addClass("ff6-dialog");
     },
@@ -307,8 +282,14 @@ function showRerollDialog(initialResult, selectedDifficulty, groupLevel) {
       reroll: {
         icon: '<i class="fas fa-redo" style="color: white;"></i>',
         callback: () => {
-          const newDangerResult = generateDanger(groupLevel);
-          const newResultMessage = "Danger! " + newDangerResult;
+          let newResultMessage;
+          if (isDanger) {
+            const newDangerResult = generateDanger(groupLevel);
+            newResultMessage = "Danger! " + newDangerResult;
+          } else {
+            const newDiscoveryResult = generateDiscovery();
+            newResultMessage = "Discovery! " + newDiscoveryResult;
+          }
           showRerollDialog(newResultMessage, selectedDifficulty, groupLevel);
         },
       },
@@ -319,12 +300,18 @@ function showRerollDialog(initialResult, selectedDifficulty, groupLevel) {
   d.render(true);
 }
 
+function toReadableText(str) {
+  let words = str.split(/(?=[A-Z])/);
+  return words
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+}
+
 function generateDanger(groupLevel) {
-  // Ensure that threatsData is loaded and contains the required keys
   if (
-    !threatsData ||
-    !threatsData.threats ||
-    !threatsData.threats.statusEffects
+    !dataLoader.threatsData ||
+    !dataLoader.threatsData.threats ||
+    !dataLoader.threatsData.threats.statusEffects
   ) {
     console.error("Threats data is not fully loaded.");
     return "Error: Data not available.";
@@ -332,34 +319,30 @@ function generateDanger(groupLevel) {
 
   const severity = randomSeverity();
   const threatType = randomThreatType();
-  const fluffDescription = getRandomElement(fluffData);
+  const readableThreatType = toReadableText(threatType);
+  const fluffDescription = getRandomElement(dataLoader.fluffData);
 
-  console.log("Group Level:", groupLevel);
-  console.log("Damage Data:", threatsData.threats.Damage);
-  console.log("Generated Threat Type:", threatType);
-  console.log(
-    "Threats Data at Group Level:",
-    threatsData.threats.Damage[groupLevel]
-  );
-  console.log("Status Effects Data:", threatsData.threats.statusEffects); // Debugging
-
-  let result = `<strong>${severity} ${threatType}:</strong> `;
+  let result = `<strong>${severity} ${readableThreatType}:</strong> `;
 
   switch (threatType) {
     case "Damage":
-      result += handleDamage(threatsData, groupLevel, severity);
+      result += handleDamage(dataLoader.threatsData, groupLevel, severity);
       break;
     case "statusEffect":
-      result += handleStatusEffect(threatsData, severity, groupLevel);
+      result += handleStatusEffect(
+        dataLoader.threatsData,
+        severity,
+        groupLevel
+      );
       break;
     case "Combat":
-      result += threatsData.threats.Combat[severity];
+      result += dataLoader.threatsData.threats.Combat[severity];
       break;
     case "dangerClock":
-      result += threatsData.threats.dangerClock[severity];
+      result += dataLoader.threatsData.threats.dangerClock[severity];
       break;
     case "villainPlanAdvance":
-      result += threatsData.threats.villainPlanAdvance[severity];
+      result += dataLoader.threatsData.threats.villainPlanAdvance[severity];
       break;
     default:
       console.error("Unknown threat type:", threatType);
@@ -417,14 +400,40 @@ function getRandomElement(arrayOrObject) {
 }
 
 function generateDiscovery() {
+  console.log(
+    "Discovery Data check: ",
+    JSON.stringify(dataLoader.discoveryData)
+  );
+  if (!dataLoader.discoveryData) {
+    console.error("Error: discoveryData is not loaded.");
+    return "Error: discoveryData is not available.";
+  }
+  console.log("discovery Data is " + JSON.stringify(dataLoader.discoveryData));
+  // Check if adjectives array is missing or empty
   if (
-    !discoveryData ||
-    !discoveryData.adjectives ||
-    !discoveryData.nouns ||
-    !discoveryData.effects
+    !dataLoader.discoveryData.adjectives ||
+    dataLoader.discoveryData.adjectives.length === 0
   ) {
-    console.error("Discoveries data is not fully loaded.");
-    return "Error: Data not available for discoveries.";
+    console.error("Error: Adjectives data is missing or empty.");
+    return "Error: Adjectives data is not available.";
+  }
+
+  // Check if nouns array is missing or empty
+  if (
+    !dataLoader.discoveryData.nouns ||
+    dataLoader.discoveryData.nouns.length === 0
+  ) {
+    console.error("Error: Nouns data is missing or empty.");
+    return "Error: Nouns data is not available.";
+  }
+
+  // Check if effects object is missing or empty
+  if (
+    !dataLoader.discoveryData.effects ||
+    Object.keys(dataLoader.discoveryData.effects).length === 0
+  ) {
+    console.error("Error: Effects data is missing or empty.");
+    return "Error: Effects data is not available.";
   }
 
   // Generate keywords
@@ -432,16 +441,18 @@ function generateDiscovery() {
   const totalKeywords = Math.floor(Math.random() * 3) + 8; // Generates between 8 to 10
   for (let i = 0; i < totalKeywords; i++) {
     const wordList =
-      i % 2 === 0 ? discoveryData.adjectives : discoveryData.nouns;
+      i % 2 === 0
+        ? dataLoader.discoveryData.adjectives
+        : dataLoader.discoveryData.nouns;
     const word = wordList[Math.floor(Math.random() * wordList.length)];
     keywords.push(word);
   }
 
   // Select a random effect from the discoveries
-  const effectsKeys = Object.keys(discoveryData.effects);
+  const effectsKeys = Object.keys(dataLoader.discoveryData.effects);
   const randomEffectKey =
     effectsKeys[Math.floor(Math.random() * effectsKeys.length)];
-  const effectDescription = discoveryData.effects[randomEffectKey];
+  const effectDescription = dataLoader.discoveryData.effects[randomEffectKey];
 
   // Combine the effect with the keywords
   return `

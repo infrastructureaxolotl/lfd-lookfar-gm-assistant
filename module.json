@@ -23,13 +23,14 @@
         "systems": [],
         "requires": []
     },
-    "esmodules": [],
-    "scripts": [
+    "esmodules": [
+        "scripts/dataLoader.js",
         "scripts/lib/lib.js",
         "scripts/travel-roll.js",
         "scripts/rewards-budget.js",
         "scripts/spiceupmyfight.js"
     ],
+    "scripts": [],
     "styles": [
         "styles/style.css"
     ],

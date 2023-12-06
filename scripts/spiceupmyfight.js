@@ -1,32 +1,11 @@
-let battleEffectsData = {};
+import { dataLoader } from "./dataLoader.js";
 
 function getGroupLevel() {
   return game.settings.get("lfd-lookfar-gm-assistant", "groupLevel");
 }
 
-async function loadData() {
-  try {
-    const threatsResponse = await fetch(
-      "/modules/lfd-lookfar-gm-assistant/data/data.json"
-    );
-    threatsData = await threatsResponse.json();
-
-    const fluffResponse = await fetch(
-      "/modules/lfd-lookfar-gm-assistant/data/fluff.json"
-    );
-    fluffData = await fluffResponse.json();
-
-    const battleEffectsResponse = await fetch(
-      "/modules/lfd-lookfar-gm-assistant/data/battleEffects.json"
-    );
-    battleEffectsData = await battleEffectsResponse.json();
-  } catch (error) {
-    console.error("Error loading data:", error);
-  }
-}
-
 Hooks.once("init", async () => {
-  await loadData();
+  await dataLoader.loadData();
   $(
     `<link rel="stylesheet" type="text/css" href="/modules/lfd-lookfar-gm-assistant/styles/style.css">`
   ).appendTo("head");
@@ -64,12 +43,14 @@ Hooks.once("init", async () => {
   }
 
   function getRandomStatusEffect(severity) {
-    const statusEffects = threatsData.threats.statusEffects[severity];
+    const statusEffects =
+      dataLoader.threatsData.threats.statusEffects[severity];
 
     // Fallback to Minor status effects for Heavy if it's empty
     if (statusEffects.length === 0) {
       if (severity === "Heavy") {
-        const minorEffects = threatsData.threats.statusEffects["Minor"];
+        const minorEffects =
+          dataLoader.threatsData.threats.statusEffects["Minor"];
         return minorEffects.length > 0
           ? minorEffects[Math.floor(Math.random() * minorEffects.length)]
           : null;
@@ -84,20 +65,26 @@ Hooks.once("init", async () => {
   function generateRandomBattleEffect() {
     const groupLevel = getGroupLevel();
     const severity = randomSeverity();
-    const randomTarget = getRandomItem(battleEffectsData.target);
+    const randomTarget = getRandomItem(dataLoader.battleEffectsData.target);
     const randomStatusEffect = getRandomStatusEffect(severity);
     const randomGimmick = getRandomGimmick();
     const randomEnvironmentEffect = getRandomItem(
-      battleEffectsData.environment
+      dataLoader.battleEffectsData.environment
     );
 
     let effectWithReplacements = randomEnvironmentEffect
       .replace(/{target}/g, randomTarget)
-      .replace(/{actions}/g, () => getRandomItem(battleEffectsData.actions))
-      .replace(/{statusEffects}/g, randomStatusEffect || "No Status Effect");
+      .replace(/{actions}/g, () =>
+        getRandomItem(dataLoader.battleEffectsData.actions)
+      )
+      .replace(
+        /{statusEffects}/g,
+        dataLoader.randomStatusEffect || "No Status Effect"
+      );
 
     if (effectWithReplacements.includes("{threats.damage.level}")) {
-      const damageLevel = threatsData.threats.Damage[groupLevel][severity];
+      const damageLevel =
+        dataLoader.threatsData.threats.Damage[groupLevel][severity];
       effectWithReplacements = effectWithReplacements.replace(
         /{threats.damage.level}/g,
         damageLevel
@@ -105,7 +92,8 @@ Hooks.once("init", async () => {
     }
     let gimmickWithReplacements = randomGimmick;
     if (gimmickWithReplacements.includes("{threats.damage.level}")) {
-      const damageLevel = threatsData.threats.Damage[groupLevel][severity];
+      const damageLevel =
+        dataLoader.threatsData.threats.Damage[groupLevel][severity];
       gimmickWithReplacements = gimmickWithReplacements.replace(
         /{threats.damage.level}/g,
         damageLevel
@@ -122,7 +110,7 @@ Hooks.once("init", async () => {
       );
     }
     effectWithReplacements = effectWithReplacements.replace(/{element}/g, () =>
-      getRandomItem(battleEffectsData.element)
+      getRandomItem(dataLoader.battleEffectsData.element)
     );
     return {
       effect: effectWithReplacements,
@@ -132,9 +120,9 @@ Hooks.once("init", async () => {
 
   function getRandomGimmick() {
     const randomIndex = Math.floor(
-      Math.random() * battleEffectsData.gimmick.length
+      Math.random() * dataLoader.battleEffectsData.gimmick.length
     );
-    return battleEffectsData.gimmick[randomIndex].item;
+    return dataLoader.battleEffectsData.gimmick[randomIndex].item;
   }
 
   function showSpiceDialog() {
