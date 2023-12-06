@@ -2,7 +2,7 @@
 
 ![fu-sitecover.jpg](https://trello.com/1/cards/64db0994c4a8791322c8b2e2/attachments/64f476a7f1dc332714f44c8c/download/fu-sitecover.jpg)
 
-Hello and welcome to Lookfar GM Assistant, a module for [Foundry VTT](<https://foundryvtt.com/>). This module is designed to make being Gamemaster easier while playing [Fabula Ultima](https://www.needgames.it/fabula-ultima-en/) by [Need Games](https://www.needgames.it/).
+Hello and welcome to Lookfar GM Assistant, a module for [Foundry VTT](https://foundryvtt.com/). This module is designed to make being Gamemaster easier while playing [Fabula Ultima](https://www.needgames.it/fabula-ultima-en/) by [Need Games](https://www.needgames.it/).
 
 Please note that licensed Fabula Ultima content is not provided with this system. As an endeavour of the League of Fabulous Developers, this module adheres to RoosterEma's guidelines and strives to ensure that the core book and supplements remain essential to player and GM experience.
 
@@ -10,11 +10,11 @@ Please note that licensed Fabula Ultima content is not provided with this system
 
 ## Features:
 
-- **Travel Check:** This feature adds a travel button to your tools UI, allowing the Gamemaster to perform a Travel Check, and generate dangers and discoveries. The popup will suggest keywords, effects, and sources of danger to make improv easier if you didn't have something planned.
-- **Customizable Settings:** GMs can adjust settings like group level, or travel roll visibility if they want the group to participate in the Travel Roll too.
-- **Wayfarer Skills:** These settings influence the dice rolls for travel checks, allowing for discoveries and easier travel based on character traits. You will also be able to enter text to make sure your Wayfarer gets credit every time. You don't want your players to forget how much their Wayfarer rocks!
+- **Travel Roll Helper:** This feature adds a travel button to your tools UI, allowing the Gamemaster to perform a Travel Check, and generate dangers and discoveries. The popup will suggest keywords, effects, and sources of danger to make improv easier if you didn't have something planned.
+- **_Customizable Settings:_** GMs can adjust settings like group level, or travel roll visibility if they want the group to participate in the Travel Roll too.
+- **_Wayfarer Skills:_** These settings influence the dice rolls for travel checks, allowing for discoveries and easier travel based on character traits. You will also be able to enter text to make sure your Wayfarer gets credit every time. You don't want your players to forget how much their Wayfarer rocks!
 - **WIP: Currency Tracker:** A tool for GMs to keep track of the money or value of items distributed during the session, and to help them manage reward budgets better.
-- **WIP: Battle Generator:** Oh no, do you need a random battle you didn't plan for? The battle generator will let you generate a combat and give you some ideas of how you might make it a bit more interesting.
+- **WIP: Add Spice to My Fight:** Looking for a way to make your fight a little bit more interesting? Use this tool to generate an obstacle, gimmick, or environmental effect to add some spice.
 
 Install: https://github.com/infrastructureaxolotl/lfd-lookfar-gm-assistant/releases/download/v0.5.0-alpha-prerelease/module.json
 
