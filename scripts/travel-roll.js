@@ -1,5 +1,6 @@
 let threatsData = {};
 let fluffData = {};
+let discoveryData = {};
 
 async function loadData() {
   try {
@@ -7,16 +8,19 @@ async function loadData() {
       "/modules/lfd-lookfar-gm-assistant/data/data.json"
     );
     threatsData = await threatsResponse.json();
+    console.log("Loaded threats data successfully.");
 
     const fluffResponse = await fetch(
       "/modules/lfd-lookfar-gm-assistant/data/fluff.json"
     );
     fluffData = await fluffResponse.json();
+    console.log("Loaded fluff data successfully.");
 
     const discoveryResponse = await fetch(
       "/modules/lfd-lookfar-gm-assistant/data/discoveries.json"
     );
     discoveryData = await discoveryResponse.json();
+    console.log("Loaded discoveries data successfully.");
   } catch (error) {
     console.error("Error loading data:", error);
   }
@@ -131,12 +135,11 @@ function showTravelCheckDialog() {
     title: "Travel Check",
     content: formHtml,
     render: (html) => {
-      html.addClass("ff6-dialog"); // Add custom font class only if the setting is true
+      html.addClass("ff6-dialog");
     },
     buttons: {
       roll: {
         icon: '<i class="fas fa-check" style="color: white"></i>',
-        label: '<span style="color: white;">Roll</span>',
         callback: (html) => {
           const selectedDifficulty = html
             .find('[name="travelCheck"]:checked')
@@ -281,8 +284,7 @@ function showRerollDialog(initialResult, selectedDifficulty, groupLevel) {
     content: `<p>Current Result: ${initialResult}</p><p>Do you want to keep this result or reroll?</p>`,
     buttons: {
       keep: {
-        icon: '<i class="fas fa-check" style="color: white></i>',
-        label: '<span style="color: white;">Keep Result</span>',
+        icon: '<i class="fas fa-check" style="color: white;"></i>',
         callback: () => {
           // Determine visibility
           const rollVisibility = game.settings.get(
@@ -303,8 +305,7 @@ function showRerollDialog(initialResult, selectedDifficulty, groupLevel) {
         },
       },
       reroll: {
-        icon: '<i class="fas fa-redo" style="color: white></i>',
-        label: '<span style="color: white;">Reroll Result</span>',
+        icon: '<i class="fas fa-redo" style="color: white;"></i>',
         callback: () => {
           const newDangerResult = generateDanger(groupLevel);
           const newResultMessage = "Danger! " + newDangerResult;

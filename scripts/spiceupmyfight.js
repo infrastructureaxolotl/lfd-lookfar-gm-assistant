@@ -1,5 +1,3 @@
-let threatsData = {};
-let fluffData = {};
 let battleEffectsData = {};
 
 function getGroupLevel() {
@@ -21,7 +19,7 @@ async function loadData() {
     const battleEffectsResponse = await fetch(
       "/modules/lfd-lookfar-gm-assistant/data/battleEffects.json"
     );
-    discoveryData = await battleEffectsResponse.json();
+    battleEffectsData = await battleEffectsResponse.json();
   } catch (error) {
     console.error("Error loading data:", error);
   }
@@ -49,16 +47,17 @@ Hooks.once("init", async () => {
         ev.preventDefault();
         showSpiceDialog();
       });
-
-      $("head").append(`<style>${css}</style>`);
     }
   });
 
   function getRandomItem(array) {
     const randomIndex = Math.floor(Math.random() * array.length);
-    return array[randomIndex].item;
+    const selectedItem = array[randomIndex];
+    // Check if the item is an object and has the 'item' property
+    return typeof selectedItem === "object" && selectedItem.item
+      ? selectedItem.item
+      : selectedItem;
   }
-
   function randomSeverity() {
     const roll = Math.random();
     return roll < 0.6 ? "Minor" : roll < 0.9 ? "Heavy" : "Massive";
@@ -66,44 +65,48 @@ Hooks.once("init", async () => {
 
   function getRandomStatusEffect(severity) {
     const statusEffects = threatsData.threats.statusEffects[severity];
-    if (statusEffects.length === 0) return null;
+
+    // Fallback to Minor status effects for Heavy if it's empty
+    if (statusEffects.length === 0) {
+      if (severity === "Heavy") {
+        const minorEffects = threatsData.threats.statusEffects["Minor"];
+        return minorEffects.length > 0
+          ? minorEffects[Math.floor(Math.random() * minorEffects.length)]
+          : null;
+      }
+      return null;
+    }
+
+    // Select a random status effect for non-empty arrays
     return statusEffects[Math.floor(Math.random() * statusEffects.length)];
   }
 
   function generateRandomBattleEffect() {
-    if (effectWithReplacements.includes("{threats.damage.level}")) {
-      const damageLevel = threatsData.threats.Damage[groupLevel][severity];
-      effectWithReplacements = effectWithReplacements.replace(
-        /{threats.damage.level}/g,
-        damageLevel.toString()
-      );
-    }
-    const keywords = [];
-    const totalKeywords = Math.floor(Math.random() * 3) + 8; // Generates between 8 to 10
-    for (let i = 0; i < totalKeywords; i++) {
-      const wordList =
-        i % 2 === 0 ? discoveryData.adjectives : discoveryData.nouns;
-      const word = wordList[Math.floor(Math.random() * wordList.length)];
-      keywords.push(word);
-    }
     const groupLevel = getGroupLevel();
     const severity = randomSeverity();
-    const randomElement = getRandomItem(battleEffectsData.element);
     const randomTarget = getRandomItem(battleEffectsData.target);
-
     const randomStatusEffect = getRandomStatusEffect(severity);
-
+    const randomGimmick = getRandomGimmick();
     const randomEnvironmentEffect = getRandomItem(
       battleEffectsData.environment
     );
 
     let effectWithReplacements = randomEnvironmentEffect
-      .replace(/{element}/g, randomElement)
-      .replace(/{target}/g, randomTarget);
+      .replace(/{target}/g, randomTarget)
+      .replace(/{actions}/g, () => getRandomItem(battleEffectsData.actions))
+      .replace(/{statusEffects}/g, randomStatusEffect || "No Status Effect");
 
     if (effectWithReplacements.includes("{threats.damage.level}")) {
       const damageLevel = threatsData.threats.Damage[groupLevel][severity];
       effectWithReplacements = effectWithReplacements.replace(
+        /{threats.damage.level}/g,
+        damageLevel
+      );
+    }
+    let gimmickWithReplacements = randomGimmick;
+    if (gimmickWithReplacements.includes("{threats.damage.level}")) {
+      const damageLevel = threatsData.threats.Damage[groupLevel][severity];
+      gimmickWithReplacements = gimmickWithReplacements.replace(
         /{threats.damage.level}/g,
         damageLevel
       );
@@ -118,25 +121,48 @@ Hooks.once("init", async () => {
         randomStatusEffect
       );
     }
+    effectWithReplacements = effectWithReplacements.replace(/{element}/g, () =>
+      getRandomItem(battleEffectsData.element)
+    );
+    return {
+      effect: effectWithReplacements,
+      gimmick: gimmickWithReplacements,
+    };
+  }
 
-    return effectWithReplacements;
+  function getRandomGimmick() {
+    const randomIndex = Math.floor(
+      Math.random() * battleEffectsData.gimmick.length
+    );
+    return battleEffectsData.gimmick[randomIndex].item;
   }
 
   function showSpiceDialog() {
-    let battleEffect = generateRandomBattleEffect();
-    let formHtml = `<p>Generated Effect: ${battleEffect}</p>`;
+    const { effect, gimmick } = generateRandomBattleEffect();
+    createSpiceDialog(effect, gimmick);
+  }
 
-    function updateDialog() {
-      battleEffect = generateRandomBattleEffect();
-      $(".ff6-dialog").html(`<p>Generated Effect: ${battleEffect}</p>`);
-    }
-
-    function keepEffect() {
-      outputToChat(battleEffect);
-    }
+  function createSpiceDialog(battleEffect, randomGimmick) {
+    let formHtml = `
+    <table style="width:100%; border-collapse: collapse; margin-bottom: 10px;">
+        <tr>
+            <th style="text-align: left; border-bottom: 1px solid #ddd;">Effect</th>
+        </tr>
+        <tr>
+            <td style="padding: 5px;">${battleEffect}</td>
+        </tr>
+    </table>
+    <table style="width:100%; border-collapse: collapse;">
+        <tr>
+            <th style="text-align: left; border-bottom: 1px solid #ddd;">Gimmick</th>
+        </tr>
+        <tr>
+            <td style="padding: 5px;">${randomGimmick}</td>
+        </tr>
+    </table>`;
 
     new Dialog({
-      title: "Let's add some complexity to this battle",
+      title: "Spice Up My Fight!",
       content: formHtml,
       render: (html) => {
         html.addClass("ff6-dialog");
@@ -145,12 +171,17 @@ Hooks.once("init", async () => {
         reroll: {
           icon: '<i class="fas fa-dice" style="color: white"></i>',
           label: '<span style="color: white;">Reroll</span>',
-          callback: () => updateDialog(),
+          callback: () => showSpiceDialog(),
         },
         keep: {
           icon: '<i class="fas fa-check" style="color: white"></i>',
           label: '<span style="color: white;">Keep</span>',
-          callback: () => keepEffect(),
+          callback: () =>
+            outputToChat(`${battleEffect}<br>Gimmick: ${randomGimmick}`),
+        },
+        close: {
+          icon: '<i class="fas fa-times" style="color: white"></i>',
+          label: '<span style="color: white;">Close</span>',
         },
       },
       default: "keep",
