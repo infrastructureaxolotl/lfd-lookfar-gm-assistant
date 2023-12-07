@@ -99,7 +99,7 @@ class TravelRolls {
 function showTravelCheckDialog() {
   new Dialog({
     title: "Travel Check",
-    content: formHtml,
+    content: `${formHtml}`,
     render: (html) => {
       html.addClass("ff6-dialog");
     },

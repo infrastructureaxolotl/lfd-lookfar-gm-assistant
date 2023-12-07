@@ -1,0 +1,146 @@
+{
+    "materials": [
+        "Iron",
+        "Steel",
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Obsidian",
+        "Crystal",
+        "Leather",
+        "Enchanted Fabric",
+        "Dragonhide",
+        "Meteor",
+        "Mithril"
+    ],
+    "equipmentTypes": {
+        "weapon": {
+            "arcane": [
+                "Staff",
+                "Tome",
+                "Orb",
+                "Wand",
+                "Crystal Ball",
+                "Runestone",
+                "Scepter",
+                "Rod",
+                "Totem",
+                "Focus",
+                "Relic",
+                "Glyph",
+                "Sigil",
+                "Censer",
+                "Cauldron",
+                "Chalice",
+                "Lantern",
+                "Candle",
+                "Brazier",
+                "Grimoire",
+                "Scroll",
+                "Tablet",
+                "Baton"
+            ],
+            "bow": [
+                "Crossbow",
+                "Shortbow",
+                "Longbow",
+                "Recurve Bow",
+                "Composite Bow"
+            ],
+            "brawling": [
+                "Knuckles",
+                "Cestus",
+                "Brass Knuckles",
+                "Katar",
+                "Gauntlets"
+            ],
+            "firearm": [
+                "Pistol",
+                "Rifle",
+                "Shotgun",
+                "Revolver",
+                "Sniper Rifle"
+            ],
+            "flail": [
+                "Chain Whip",
+                "Morning Star",
+                "Nunchaku",
+                "Ball and Chain",
+                "Flail",
+                "Kusarigama"
+            ],
+            "heavy": [
+                "Hammer",
+                "Broadaxe",
+                "Waraxe",
+                "Maul",
+                "Claymore",
+                "Club",
+                "Mace",
+                "Mattock",
+                "Warhammer",
+                "Cudgel"
+            ],
+            "dagger": [
+                "Dagger",
+                "Sgian Dubh",
+                "Dirk",
+                "Stiletto",
+                "Kris",
+                "Poniard"
+            ],
+            "spear": [
+                "Light Spear",
+                "Heavy Spear",
+                "Pike",
+                "Halberd",
+                "Trident",
+                "Glaive",
+                "Lance",
+                "Volge",
+                "Scythe"
+            ],
+            "sword": [
+                "Sword",
+                "Greatsword",
+                "Katana",
+                "Rapier",
+                "Scimitar",
+                "Falchion",
+                "Khopesh"
+            ],
+            "thrown": [
+                "Shuriken",
+                "Kunai",
+                "Throwing Knives",
+                "Throwing Axes",
+                "Javelin",
+                "Chakram",
+                "Boomerang",
+                "Dart",
+                "Bolas"
+            ]
+        },
+        "armor": [
+            "Cloth",
+            "Leather",
+            "Mail",
+            "Plate"
+        ],
+        "shield": [
+            "Buckler",
+            "Kite",
+            "Tower"
+        ],
+        "accessory": [
+            "Amulet",
+            "Belt",
+            "Boots",
+            "Bracers",
+            "Cloak",
+            "Gloves",
+            "Helm",
+            "Ring"
+        ]
+    }
+}

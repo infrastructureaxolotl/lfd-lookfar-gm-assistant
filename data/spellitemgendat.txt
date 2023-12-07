@@ -1,0 +1,1936 @@
+//SEEDS
+//ITEM SEEDS
+SEEDITEMALL
+	<ROUTEBEFORE> <SEEDALLITEMS>
+	<ROUTEBEFORE> <SEEDALLITEMS> <ROUTEAFTER>
+	<SEEDALLITEMS> <ROUTEAFTER>
+SEEDITEMABSTRACT
+	<ROUTEBEFORE> <SEEDABSTRACT>
+	<ROUTEBEFORE> <SEEDABSTRACT> <ROUTEAFTER>
+	<SEEDABSTRACT> <ROUTEAFTER>
+SEEDITEMARMORALL
+	<ROUTEBEFORE> <SEEDALLARMOR>
+	<ROUTEBEFORE> <SEEDALLARMOR> <ROUTEAFTER>
+	<SEEDALLARMOR> <ROUTEAFTER>
+SEEDITEMARMOR
+	<ROUTEBEFORE> <SEEDARMORFULL>
+	<ROUTEBEFORE> <SEEDARMORFULL> <ROUTEAFTER>
+	<SEEDARMORFULL> <ROUTEAFTER>
+SEEDITEMARMORPART
+	<ROUTEBEFORE> <SEEDARMORPARTS>
+	<ROUTEBEFORE> <SEEDARMORPARTS> <ROUTEAFTER>
+	<SEEDARMORPARTS> <ROUTEAFTER>
+SEEDITEMARMORSHIELD
+	<ROUTEBEFORE> <SEEDARMORSHIELD>
+	<ROUTEBEFORE> <SEEDARMORSHIELD> <ROUTEAFTER>
+	<SEEDARMORSHIELD> <ROUTEAFTER>
+SEEDITEMOUTFITTING
+	<ROUTEBEFORE> <SEEDWEARABLES>
+	<ROUTEBEFORE> <SEEDWEARABLES> <ROUTEAFTER>
+	<SEEDWEARABLES> <ROUTEAFTER>
+SEEDITEMCLOTHES
+	<ROUTEBEFORE> <SEEDCLOTHES>
+	<ROUTEBEFORE> <SEEDCLOTHES> <ROUTEAFTER>
+	<SEEDCLOTHES> <ROUTEAFTER>
+SEEDITEMCONTAINERS
+	<ROUTEBEFORE> <SEEDCONTAINERS>
+	<ROUTEBEFORE> <SEEDCONTAINERS> <ROUTEAFTER>
+	<SEEDCONTAINERS> <ROUTEAFTER>
+SEEDITEMDEVICE
+	<ROUTEBEFORE> <SEEDDEVICES>
+	<ROUTEBEFORE> <SEEDDEVICES> <ROUTEAFTER>
+	<SEEDDEVICES> <ROUTEAFTER>
+SEEDITEMJEWELRY
+	<ROUTEBEFORE> <SEEDJEWELRY>
+	<ROUTEBEFORE> <SEEDJEWELRY> <ROUTEAFTER>
+	<SEEDJEWELRY> <ROUTEAFTER>
+SEEDITEMLITERATURE
+	<ROUTEBEFORE> <SEEDLITERATURE>
+	<ROUTEBEFORE> <SEEDLITERATURE> <ROUTEAFTER>
+	<SEEDLITERATURE> <ROUTEAFTER>
+SEEDITEMINSTRUMENTS
+	<ROUTEBEFORE> <SEEDINSTRUMENTS>
+	<ROUTEBEFORE> <SEEDINSTRUMENTS> <ROUTEAFTER>
+	<SEEDINSTRUMENTS> <ROUTEAFTER>
+SEEDITEMPOTIONS
+	<ROUTEBEFORE> <SEEDPOTIONS>
+	<ROUTEBEFORE> <SEEDPOTIONS> <ROUTEAFTER>
+	<SEEDPOTIONS> <ROUTEAFTER>
+SEEDITEMMEDICINE
+	<ROUTEBEFORE> <SEEDMEDICINE>
+	<ROUTEBEFORE> <SEEDMEDICINE> <ROUTEAFTER>
+	<SEEDMEDICINE> <ROUTEAFTER>
+SEEDITEMRELIGIOUS
+	<ROUTEBEFORE> <SEEDRELIGIOUS>
+	<ROUTEBEFORE> <SEEDRELIGIOUS> <ROUTEAFTER>
+	<SEEDRELIGIOUS> <ROUTEAFTER>
+SEEDITEMSTAVESPLUS
+	<ROUTEBEFORE> <SEEDSTAVESPLUS>
+	<ROUTEBEFORE> <SEEDSTAVESPLUS> <ROUTEAFTER>
+	<SEEDSTAVESPLUS> <ROUTEAFTER>
+SEEDITEMWEAPONALL
+	<ROUTEBEFORE> <SEEDALLWEAPONS>
+	<ROUTEBEFORE> <SEEDALLWEAPONS> <ROUTEAFTER>
+	<SEEDALLWEAPONS> <ROUTEAFTER>
+SEEDITEMWEAPONTWOEDGE
+	<ROUTEBEFORE> <SEEDWEAPONTWOEDGE>
+	<ROUTEBEFORE> <SEEDWEAPONTWOEDGE> <ROUTEAFTER>
+	<SEEDWEAPONTWOEDGE> <ROUTEAFTER>
+SEEDITEMWEAPONONEEDGE
+	<ROUTEBEFORE> <SEEDWEAPONONEEDGE>
+	<ROUTEBEFORE> <SEEDWEAPONONEEDGE> <ROUTEAFTER>
+	<SEEDWEAPONONEEDGE> <ROUTEAFTER>
+SEEDITEMWEAPONCRUSHING
+	<ROUTEBEFORE> <SEEDWEAPONCRUSHING>
+	<ROUTEBEFORE> <SEEDWEAPONCRUSHING> <ROUTEAFTER>
+	<SEEDWEAPONCRUSHING> <ROUTEAFTER>
+SEEDITEMWEAPONPOLE
+	<ROUTEBEFORE> <SEEDWEAPONPOLE>
+	<ROUTEBEFORE> <SEEDWEAPONPOLE> <ROUTEAFTER>
+	<SEEDWEAPONPOLE> <ROUTEAFTER>
+SEEDITEMWEAPONTHROWN
+	<ROUTEBEFORE> <SEEDWEAPONTHROWN>
+	<ROUTEBEFORE> <SEEDWEAPONTHROWN> <ROUTEAFTER>
+	<SEEDWEAPONTHROWN> <ROUTEAFTER>
+SEEDITEMWEAPONPROJECTILE
+	<ROUTEBEFORE> <SEEDWEAPONPROJECTILE>
+	<ROUTEBEFORE> <SEEDWEAPONPROJECTILE> <ROUTEAFTER>
+	<SEEDWEAPONPROJECTILE> <ROUTEAFTER>
+//Characterseeds
+SEEDITEMALCHEMIST
+	<SEEDITEMCLOTHES>
+	<SEEDITEMCONTAINERS>
+	<SEEDITEMDEVICE>
+	<SEEDITEMJEWELRY>
+	<SEEDITEMLITERATURE>
+	<SEEDITEMPOTIONS>
+	<SEEDITEMPOTIONS>
+	<SEEDITEMPOTIONS>
+	<SEEDITEMMEDICINE>
+	<SEEDITEMMEDICINE>
+	<SEEDITEMMEDICINE>
+SEEDITEMBARD
+	<SEEDITEMINSTRUMENTS>
+	<SEEDITEMINSTRUMENTS>
+	<SEEDITEMINSTRUMENTS>
+	<SEEDITEMINSTRUMENTS>
+	<SEEDITEMCLOTHES>
+	<SEEDITEMJEWELRY>
+	<SEEDITEMLITERATURE>
+	<SEEDITEMPOTIONS>
+SEEDITEMCLERIC
+	<SEEDITEMCLOTHES>
+	<SEEDITEMJEWELRY>
+	<SEEDITEMLITERATURE>
+	<SEEDITEMPOTIONS>
+	<SEEDITEMMEDICINE>
+	<SEEDITEMRELIGIOUS>
+	<SEEDITEMWEAPONALL>
+	<SEEDITEMARMORALL>
+SEEDITEMMAGICUSER
+	<SEEDITEMABSTRACT>
+	<SEEDITEMCLOTHES>
+	<SEEDITEMCONTAINERS>
+	<SEEDITEMJEWELRY>
+	<SEEDITEMLITERATURE>
+	<SEEDITEMPOTIONS>
+	<SEEDITEMSTAVESPLUS>
+SEEDITEMPALADIN
+	<SEEDITEMWEAPONALL>
+	<SEEDITEMWEAPONALL>
+	<SEEDITEMARMORALL>
+	<SEEDITEMARMORALL>
+	<SEEDITEMJEWELRY>
+	<SEEDITEMLITERATURE>
+	<SEEDITEMPOTIONS>
+	<SEEDITEMMEDICINE>
+	<SEEDITEMRELIGIOUS>
+SEEDITEMTINKER
+	<SEEDITEMARMORPART>
+	<SEEDITEMCONTAINERS>
+	<SEEDITEMCLOTHES>
+	<SEEDITEMDEVICE>
+	<SEEDITEMDEVICE>
+	<SEEDITEMDEVICE>
+	<SEEDITEMDEVICE>
+	<SEEDITEMJEWELRY>
+	<SEEDITEMLITERATURE>
+	<SEEDITEMPOTIONS>
+	<SEEDITEMWEAPONALL>
+SEEDTITEMWARRIOR
+	<SEEDITEMWEAPONALL>
+	<SEEDITEMWEAPONALL>
+	<SEEDITEMWEAPONALL>
+	<SEEDITEMARMORALL>
+	<SEEDITEMARMORALL>
+	<SEEDITEMARMORALL>
+	<SEEDITEMPOTIONS>
+	<SEEDITEMJEWELRY>
+//ITEM SEEDS
+SEEDALLITEMS
+	<SEEDWEAPONTWOEDGE>
+	<SEEDWEAPONONEEDGE>
+	<SEEDWEAPONCRUSHING>
+	<SEEDWEAPONPOLE>
+	<SEEDWEAPONTHROWN>
+	<SEEDWEAPONPROJECTILE>
+	<SEEDARMORFULL>
+	<SEEDARMORPARTS>
+	<SEEDARMORSHIELD>
+	<SEEDCLOTHES>
+	<SEEDJEWELRY>
+	<SEEDPOTIONS>
+	<SEEDMEDICINE>
+	<SEEDABSTRACT>
+	<SEEDINSTRUMENTS>
+	<SEEDDEVICES>
+SEEDALLWEAPONS
+	<SEEDWEAPONTWOEDGE>
+	<SEEDWEAPONONEEDGE>
+	<SEEDWEAPONCRUSHING>
+	<SEEDWEAPONPOLE>
+	<SEEDWEAPONTHROWN>
+	<SEEDWEAPONPROJECTILE>
+SEEDALLARMOR
+	<SEEDARMORFULL>
+	<SEEDARMORPARTS>
+	<SEEDARMORSHIELD>
+SEEDWEARABLES
+	<SEEDCLOTHES>
+	<SEEDJEWELRY>
+//Specific seeds.
+//Weapons
+SEEDWEAPONTWOEDGE
+	Sword
+	Dirk
+	Cutlass
+	Scimtar
+	Bastard Sword
+	Saber
+	Knife
+	Dagger
+	Rapier
+	Claymore
+	Longsword
+	Two-handed Sword
+SEEDWEAPONONEEDGE
+	Axe
+	Hatchet
+	War-axe
+SEEDWEAPONCRUSHING
+	Club
+	Hammer
+	Mace
+	Mattock
+	Warhammer
+	Cudgel
+	Flail
+SEEDWEAPONPOLE
+	Glaive
+	Awl-pike
+	Sycthe
+	Voluge
+	Spear
+	Partisan
+	Trident
+SEEDWEAPONTHROWN
+	Bola
+	Dart
+	Shuriken
+	Throwing Knife
+	Boomerang
+	Chakram
+	Throwing Axe
+	Harpoon
+	Spear
+	Javelin
+SEEDWEAPONPROJECTILE
+	Atal
+	Arrow
+	Bullet
+	Blowgun
+	Bow
+	Crossbow
+	Quarrel
+	Sling
+SEEDSTAVESPLUS
+	Staff
+	Stave
+	Rod
+	Wand
+	Sceptre
+	Baton
+	Quarterstaff
+//Armors
+SEEDARMORFULL
+	Leather Armor
+	Banded Mail
+	Chain Mail
+	Plate Mail
+	Quilted Armor
+	Ring Mail
+	Banded Mail
+SEEDARMORPARTS
+	Helm
+	Hauberk
+	Bracer
+	Gauntlet
+	Greaves
+	Armguard
+	Breast Plate
+SEEDARMORSHIELD
+	Buckler
+	Shield
+	Tower Shield
+//Oddiments
+SEEDABSTRACT
+	Cone
+	Sphere
+	Orb
+	Cube
+	Bar
+	Pyramid
+SEEDCLOTHES
+	Shirt
+	Moccasins
+	Shoes
+	Hat
+	Coat
+	Cloak
+	Shoes
+	Sandals
+	Garment
+	Suit
+	Gown
+	Belt
+	Boots
+	Pants
+	Vest
+SEEDCONTAINERS
+	Chest
+	Bottle
+	Casque
+	Barrel
+	Keg
+	Box
+	Albemic
+	Beaker
+	Bag
+	Jar
+	Jug
+	Sack
+SEEDJEWELRY
+	Ring
+	Torc
+	Earrings
+	Pendant
+	Diadem
+	Tiara
+	Crown
+	Bracelet
+	Anklet
+	Necklace
+	Pendant
+	Broch
+	Charm
+	Amulet
+	Pin
+SEEDRELIGIOUS
+	Aspergillum
+	Relic
+	Prayer Wheel
+	Braizer
+	Censer
+	Candleabra
+	Miter
+	Prayer Beads
+	Rosary
+	Symbol
+	Thurible
+	Vestiments
+	Scripture
+	Talisman
+//Consumables
+SEEDPOTIONS
+	Brew
+	Draught
+	Elixir
+	Drink
+	Philter
+	Tonic
+	Potion
+SEEDMEDICINE
+	Balm
+	Medication
+	Lotion
+	Medicine
+	Ointment
+	Peripat
+	Pill
+	Salve
+//Literary
+SEEDLITERATURE
+	Scroll
+	Codex
+	Lexicon
+	Treatise
+	Tome
+	Book
+	Grimoire
+	Manual
+//instruments
+SEEDINSTRUMENTS
+	Lute
+	Lyre
+	Drum
+	Flute
+	Trumpet
+	Sitar
+	Harp
+	Harpsichord
+	Mandolin
+	Pipes
+//Implements
+SEEDDEVICES
+	Apparatus
+	Automaton
+	Device
+	Tool
+	Contraption
+	Gear
+	Machine
+	Mechanism
+	Utensil
+//ROUTERS
+ROUTEBEFORE
+	<ROUTEBEFOREDESC>
+	<ROUTEBEFOREPOSESS>
+ROUTEBEFOREDESC
+	<REFDESCABSTRACT>
+	<REFDESCOBJECT>
+	<REFDESCABSTRACT> <REFDESCOBJECT>
+ROUTEBEFOREPOSESS
+	<POSESSORROUTE>
+	<REFDESCABSTRACT> <POSESSORROUTE>
+	<REFDESCBEING> <POSESSORROUTE>
+//After
+ROUTEAFTER
+	of <ROUTEELEMENTAFTER>
+	of <ROUTEBEINGAFTER>
+	of <ROUTEAFFECT>
+	of <ROUTEFORMSAFTER>
+	of <ROUTEMAGICALFORMAFTER>
+ROUTEAFFECT
+	<REFBEING> <REFACTIONBEING>
+	<REFAFFECTORBEING> <BEINGROUTE>
+	<REFAFFECTORELEMENT> <REFOBJECTABSTRACT>
+	<REFAFFECTORELEMENT> <REFOBJECTELEMENT>
+	<REFOBJECTABSTRACT> <REFACTIONELEMENT>
+	<REFOBJECTELEMENT> <REFACTIONELEMENT>
+ROUTEBEINGAFTER
+	the <BEINGROUTE>
+	the <BEINGROUTE>
+	the <BEINGROUTE>
+	the <POSESSORROUTE> <REFOJBECTELEMETNBEING>
+	the <REFBEINGABSTRACT>
+	<REFBEINGABSTRACTPLURAL>
+	the <REFBEING>
+	<REFBEINGPLURAL>
+	the <REFDESCABSTRACT> <REFBEINGABSTRACT>
+	<REFDESCABSTRACT> <REFBEINGABSTRACTPLURAL>
+	the <REFDESCABSTRACT> <REFBEING>
+	<REFDESCABSTRACT> <REFBEINGPLURAL>
+	the <REFDESCBEING> <REFBEINGABSTRACT>
+	<REFDESCBEING> <REFBEINGABSTRACTPLURAL>
+	the <REFDESCBEING> <REFBEING>
+	<REFDESCBEING> <REFBEINGPLURAL>
+ROUTEELEMENTAFTER
+	<OBJECTROUTEALLCOMBO>
+	<OBJECTROUTEABSNONPLURAL>
+	<OBJECTROUTEABSNONPLURAL> <FORMROUTE>
+	<REFDESCABSTRACT> <OBJECTROUTEABSNONPLURAL>
+	<REFDESCABSTRACT> <OBJECTROUTEABSNONPLURAL> <FORMROUTE>
+ROUTEFORMSAFTER
+	<REFOBJECTELEMENT> <REFFORM>
+	<REFOBJECTELEMENT> <REFFORMPLURAL>
+ROUTEMAGICALFORMAFTER
+	the <REFMENTITY> of <REFAFFECTORBEING> <BEINGROUTE>
+	the <REFMENTITY> of <REFBEING> <REFACTIONBEING>
+	the <REFMENTITY> of  <OBJECTROUTEALLCOMBO>
+	the <REFMENTITY> of  <REFOBJECTELEMENT>
+	the <REFMENTITY> of  <REFOJBECTELEMETNBEING>
+	the <REFMENTITY> of  <REFOBJECTABSTRACT>
+	the <REFMENTITY> of <REFOBJECTABSTRACT> <REFACTIONELEMENT>
+	the <REFMENTITY> of <REFOBJECTELEMENT> <REFACTIONELEMENT>
+	the <REFMENTITY> of <REFAFFECTORELEMENT> <REFOBJECTABSTRACT>
+	the <REFMENTITY> of <REFAFFECTORELEMENT> <REFOBJECTELEMENT>
+	the <REFMENTITY> of <REFAFFECTOROBJECT> <REFOBJECTPLURAL>
+	the <REFDESCABSTRACT> <REFMENTITY> of <REFACTIONELEMENT>
+	the <REFDESCABSTRACT> <REFMENTITY> of <REFOBJECTABSTRACT>
+	the <REFDESCABSTRACT> <REFMENTITY> of <REFOBJECTELEMENT>
+	the <REFDESCABSTRACT> <REFMENTITY> of the <REFDESCBEING> <BEINGROUTE>
+	the <POSESSORROUTE> <REFMENTITY> of  <REFOBJECTELEMENT>
+	the <POSESSORROUTE> <REFMENTITY> of  <REFOJBECTELEMETNBEING>
+	the <POSESSORROUTE> <REFMENTITY> of  <REFOBJECTABSTRACT>
+	the <REFDESCBEING> <POSESSORROUTE> <REFMENTITY> of  <REFOBJECTELEMENT>
+	the <REFDESCBEING> <POSESSORROUTE> <REFMENTITY> of  <REFOJBECTELEMETNBEING>
+	the <REFDESCBEING> <POSESSORROUTE> <REFMENTITY> of  <REFOBJECTABSTRACT>
+	the <REFDESCABSTRACT> <REFMENTITY> of  the <REFDESCOBJECT> <OBJECTROUTE>
+	the <REFDESCABSTRACT> <REFMENTITY> of <REFAFFECTORBEING> <BEINGROUTESINGLE>
+	the <REFDESCABSTRACT> <REFMENTITY> of <REFAFFECTORELEMENT> <REFOBJECTELEMENT>
+//SPELL SEETS
+SEEDALL
+	<SEEDSIMPLE>
+	<SEEDCOMPLEX>
+	<SEEDELABORATE>
+SEEDSIMPLECOMPLEX
+	<SEEDSIMPLE>
+	<SEEDCOMPLEX>
+SEEDCOMPLEXELABORATE
+	<SEEDCOMPLEX>
+	<SEEDELABORATE>
+SEEDSIMPLE
+	<REFBEING> <REFACTIONBEING>
+	<REFOBJECTABSTRACT> <REFACTIONELEMENT>
+	<REFOBJECTELEMENT> <REFACTIONELEMENT>
+	<REFAFFECTORBEING> <BEINGROUTE>
+	<REFAFFECTORELEMENT> <REFOBJECTABSTRACT>
+	<REFAFFECTORELEMENT> <REFOBJECTELEMENT>
+	<REFAFFECTOROBJECT> <REFOBJECTPLURAL>
+	<REFBEING> <REFACTIONBEING>
+	<POSESSORROUTE> <REFOJBECTELEMETNBEING>
+	<POSESSORROUTE> <REFOBJECTABSTRACT>
+	<POSESSORROUTE> <REFOJBECTELEMETNBEING>
+	<POSESSORROUTE> <REFOJBECTELEMETNBEING>
+	<REFDESCABSTRACT> <REFOBJECTABSTRACT>
+	<REFDESCOBJECT> <REFFORM>
+	<REFDESCOBJECT> <REFFORMPLURAL>
+	<REFFORM> of <REFOBJECTELEMENT>
+	<REFFORMPLURAL> of <REFOBJECTELEMENT>
+	<REFMENTITY> of <REFACTIONELEMENT>
+	<REFMENTITY> of <REFOBJECTABSTRACT>
+	<REFMENTITY> of <REFOBJECTELEMENT>
+	<REFMENTITY> of <REFOJBECTELEMETNBEING>
+	<REFOBJECTABSTRACT> <REFACTIONELEMENT>
+	<REFOBJECTELEMENT> <REFACTIONELEMENT>
+	<REFOBJECTELEMENT> <REFFORM>
+	<REFOBJECTELEMENT> <REFFORMPLURAL>
+	<REFOBJECTPHYSICAL> <REFACTIONOBJECT>
+	The <REFOBJECTPHYSICAL> of <REFBEINGABSTRACTPLURAL>
+	The <REFOBJECTPHYSICAL> of <REFBEINGPLURAL>
+	The <REFOBJECTPHYSICAL> of <REFOBJECTABSTRACT>
+	The <REFOBJECTPHYSICAL> of <REFOBJECTELEMENT>
+	The <REFOBJECTPHYSICAL> of <REFOJBECTELEMETNBEING>
+	<REFOBJECTPLURAL> of <REFOBJECTELEMENT>
+SEEDCOMPLEX
+	<REFAFFECTORBEING> <REFDESCABSTRACT> <BEINGROUTE>
+	<REFAFFECTORBEING> <REFDESCBEING> <BEINGROUTE>
+	<REFMENTITY> of <REFAFFECTORBEING> <BEINGROUTE>
+	<REFMENTITY> of <REFBEING> <REFACTIONBEING>
+	<REFMENTITY> of  <OBJECTROUTEALLCOMBO>
+	<REFMENTITY> of <REFOBJECTABSTRACT> <REFACTIONELEMENT>
+	<REFMENTITY> of <REFOBJECTELEMENT> <REFACTIONELEMENT>
+	<REFMENTITY> of <REFAFFECTORELEMENT> <REFOBJECTABSTRACT>
+	<REFMENTITY> of <REFAFFECTORELEMENT> <REFOBJECTELEMENT>
+	<REFMENTITY> of <REFAFFECTOROBJECT> <REFOBJECTPLURAL>
+	<POSESSORROUTE> <REFFORM> of <REFOBJECTELEMENT>
+	<POSESSORROUTE> <REFFORMPLURAL> of <REFOBJECTELEMENT>
+	<POSESSORROUTE> <REFMENTITY> of <REFACTIONELEMENT>
+	<POSESSORROUTE> <REFMENTITY> of <REFOBJECTABSTRACT>
+	<POSESSORROUTE> <REFMENTITY> of <REFOBJECTELEMENT>
+	<POSESSORROUTE> <REFOBJECTELEMENT> <REFFORM>
+	<POSESSORROUTE> <REFOBJECTELEMENT> <REFFORMPLURAL>
+	<POSESSORROUTE> <REFOBJECTPHYSICAL> of <REFOBJECTELEMENT>
+	<POSESSORROUTE> <REFOBJECTPLURAL> of <REFOBJECTELEMENT>
+	<REFDESCABSTRACT> <REFFORM> of <REFOBJECTELEMENT>
+	<REFDESCABSTRACT> <REFFORMPLURAL> of <REFOBJECTELEMENT>
+	<REFDESCABSTRACT> <REFMENTITY> of <REFACTIONELEMENT>
+	<REFDESCABSTRACT> <REFMENTITY> of <REFOBJECTABSTRACT>
+	<REFDESCABSTRACT> <REFMENTITY> of <REFOBJECTELEMENT>
+	<REFDESCABSTRACT> <REFOBJECTELEMENT> <REFFORM>
+	<REFDESCABSTRACT> <REFOBJECTELEMENT> <REFFORMPLURAL>
+	<REFDESCABSTRACT> <REFOBJECTPHYSICAL> of <REFOBJECTELEMENT>
+	<REFDESCABSTRACT> <REFOBJECTPLURAL> of <REFOBJECTELEMENT>
+	<REFDESCOBJECT> <REFFORM> of <REFOBJECTABSTRACT>
+	<REFDESCOBJECT> <REFFORM> of <REFOBJECTELEMENT> 
+	<REFDESCOBJECT> <REFFORMPLURAL> of <REFOBJECTABSTRACT>
+	<REFDESCOBJECT> <REFFORMPLURAL> of <REFOBJECTELEMENT>
+	<REFDESCOBJECT> <REFOBJECTPHYSICAL> of <REFOBJECTELEMENT>
+	<REFDESCOBJECT> <REFOBJECTPLURAL> of <REFOBJECTELEMENT>
+	<REFFORM> of <REFDESCABSTRACT> <REFOBJECTABSTRACT>
+	<REFFORM> of <REFDESCABSTRACT> <REFOBJECTELEMENT> 
+	<REFFORM> of <REFOBJECTELEMENT> and <REFOBJECTABSTRACT>
+	<REFFORMPLURAL> of <REFDESCABSTRACT> <REFOBJECTABSTRACT>
+	<REFFORMPLURAL> of <REFDESCABSTRACT> <REFOBJECTELEMENT>
+	<REFFORMPLURAL> of <REFDESCOBJECT> <REFOBJECTELEMENT>
+	<REFMENTITY> of <REFOBJECTELEMENT> and <REFOBJECTABSTRACT>
+	<REFOBJECTPHYSICAL> of <REFDESCABSTRACT> <REFOBJECTABSTRACT>
+	<REFOBJECTPHYSICAL> of <REFDESCABSTRACT> <REFOBJECTELEMENT> 
+	<REFOBJECTPLURAL> of <REFDESCABSTRACT> <REFOBJECTABSTRACT>
+	<REFOBJECTPLURAL> of <REFDESCABSTRACT> <REFOBJECTELEMENT>
+	<REFNUMERIC> <REFMENTITYPLURAL> of <REFOBJECTELEMENT>
+	The <REFMENTITYPLURAL> of <REFDESCABSTRACT> <REFOBJECTELEMENT>
+	The <REFDESCABSTRACT> <REFMENTITY> of the <BEINGROUTE>
+	The <REFDESCABSTRACT> <REFMENTITY> of <REFOBJECTELEMENT>
+SEEDELABORATE
+	The <REFDESCABSTRACT> <REFMENTITY> of the <REFDESCABSTRACT> <BEINGROUTE>
+	The <REFDESCABSTRACT> <REFMENTITY> of the <REFDESCBEING> <BEINGROUTE>
+	<REFMENTITY> of <REFAFFECTORBEING> <REFDESCABSTRACT> <BEINGROUTE>
+	<REFMENTITY> of <REFAFFECTORBEING> <REFDESCBEING> <BEINGROUTE>
+	<REFMENTITY> of <REFAFFECTORBEING> <BEINGROUTE>
+	<REFDESCABSTRACT> <REFMENTITY> of the <REFDESCBEING> <BEINGROUTE>
+	<REFDESCABSTRACT> <REFMENTITY> of  <OBJECTROUTEALLCOMBO>
+	<POSESSORROUTE> <REFMENTITY> of  <OBJECTROUTEALLCOMBO>
+	<REFDESCBEING> <POSESSORROUTE> <REFMENTITY> of  <REFOBJECTELEMENT>
+	<REFDESCBEING> <POSESSORROUTE> <REFMENTITY> of  <REFOJBECTELEMETNBEING>
+	<REFDESCBEING> <POSESSORROUTE> <REFMENTITY> of  <REFOBJECTABSTRACT>
+	The <REFNUMERIC> <REFDESCABSTRACT> <REFMENTITYPLURAL> of  <OBJECTROUTEABS>
+	The <REFNUMERIC> <REFMENTITYPLURAL> of  the <REFDESCOBJECT> <OBJECTROUTE>
+	<REFDESCABSTRACT> <REFMENTITY> of  the <REFDESCOBJECT> <OBJECTROUTE>
+	The <REFNUMERIC> <REFMENTITYPLURAL> of <BEINGROUTESINGLE> <REFACTIONBEING>
+	<REFDESCABSTRACT> <REFMENTITY> of <REFAFFECTORBEING> <BEINGROUTESINGLE>
+	The <REFNUMERIC> <REFMENTITYPLURAL> of <REFOBJECTELEMENT> <REFACTIONELEMENT>
+	<REFDESCABSTRACT> <REFMENTITY> of <REFAFFECTORELEMENT> <REFOBJECTELEMENT>
+//EXTRAS
+BEINGROUTESINGLE
+	<REFBEINGABSTRACT>
+	<REFBEING>
+BEINGROUTE
+	<REFBEINGABSTRACT>
+	<REFBEINGABSTRACTPLURAL>
+	<REFBEING>
+	<REFBEINGPLURAL>
+FORMROUTE
+	<REFFORM>
+	<REFFORMPLURAL>
+OBJECTROUTE
+	<REFOBJECTPHYSICAL>
+	<REFOBJECTPLURAL>
+OBJECTROUTEABSNONPLURAL
+	<REFOBJECTELEMENT>
+	<REFOJBECTELEMETNBEING>
+OBJECTROUTEABS
+	<REFOBJECTELEMENT>
+	<REFOJBECTELEMETNBEING>
+	<REFOBJECTPLURAL>
+OBJECTROUTEALL
+	<REFOBJECTELEMENT>
+	<REFOJBECTELEMETNBEING>
+	<REFOBJECTPHYSICAL>
+	<REFOBJECTPLURAL>
+OBJECTROUTEALLCOMBO
+	<REFOBJECTELEMENT> and <REFOJBECTELEMETNBEING>
+	<REFOBJECTELEMENT> and <REFOBJECTABSTRACT>
+	<REFOBJECTABSTRACT> and <REFOJBECTELEMETNBEING>
+POSESSORROUTE
+	<REFBEINGPOSESSIVE>
+	<REFBEINGPLURALPOSESSIVE>
+	<REFBEINGABSTRACTPOSESSIVE>
+	<REFBEINGABSTRACTPLURALPOSESSIVE>
+//DESCRIPTOR
+REFDESCABSTRACT
+	Abyssimal
+	Accursed
+	Ancestral
+	Ancient
+	Aquatic
+	Blasphemous
+	Blessed
+	Celestial
+	Chaotic
+	Cursed
+	Damned
+	Deadly
+	Deathly
+	Demonic
+	Dire
+	Disrupting
+	Distant
+	Divine
+	Doomed
+	Dwarven
+	Elemental
+	Elven
+	Endless
+	Eternal
+	Ethereal
+	Evil
+	Exalted
+	Exceptional
+	Final
+	Fine
+	Forbidden
+	Fortuitous
+	Foul
+	Future
+	Ghostly
+	Glorious
+	Glorified
+	Good
+	Great
+	Greater
+	Haunted
+	Heavenly
+	Hellish
+	Holy
+	Illuminated
+	Imperial
+	Infernal
+	Kingly
+	Lawful
+	Lesser
+	Lordly
+	Lost
+	Marvelous
+	Minor
+	Monstrous
+	Mystic
+	Mystical
+	Otherworldly
+	Past
+	Perfect
+	Perfected
+	Royal
+	Sacred
+	Saintly
+	Savage
+	Spectral
+	Spiritual
+	Splendid
+	Sylvan
+	Ultimate
+	Unholy
+	Unknowable
+	Unspeakable
+	Villainous
+	Wonderful
+	Wondrous
+	Worldly
+REFDESCOBJECT
+	Acidic
+	Adamantine
+	Animate
+	Animated
+	Black
+	Blue
+	Bodily
+	Burning
+	Clear
+	Dancing
+	Electrical
+	Embossed
+	Envenomed
+	Fiery
+	Flaming
+	Giant
+	Glammered
+	Glimmering
+	Glowing
+	Golden
+	Gothic
+	Gray
+	Green
+	Howling
+	Icy
+	Immovable
+	Immovable
+	Instant
+	Jagged
+	Keen
+	Living
+	Massive
+	Metallic
+	Meteoric
+	Ornate
+	Portable
+	Prismatic
+	Purple
+	Red
+	Rugged
+	Runed
+	Scintillating
+	Screaming
+	Sharp
+	Shooting
+	Spined
+	Strong
+	Sturdy
+	Thundering
+	Thunderous
+	Vorpal
+	White
+	Yellow
+REFDESCBEING
+	Agile
+	Angry
+	Barbaric
+	Benevolent
+	Caring
+	Charismatic
+	Clever
+	Compassionate
+	Corrupt
+	Courageous
+	Cowardly
+	Crazed
+	Crazed
+	Cruel
+	Cunning
+	Drunken
+	Generous
+	Happy
+	Hateful
+	Haunted
+	Infamous
+	Innocent
+	Insane
+	Intelligent
+	Just
+	Miserly
+	Ruthless
+	Sadistic
+	Sagely
+	Screaming
+	Serene
+	Sly
+	Studious
+	Unjust
+	Vicious
+	Wise
+//OBJECTS
+REFOBJECTPHYSICAL
+	Armor
+	Arrow
+	Axe
+	Blade
+	Bone
+	Book
+	Bow
+	Candle
+	Chain
+	Chamber
+	Chime
+	Cloak
+	Club
+	Coin
+	Crown
+	Crystal
+	Door
+	Dungeon
+	Gate
+	Gauntlet
+	Gem
+	Glass
+	Glove
+	Goblet
+	Grail
+	Helmet
+	Hole
+	Idol
+	Knife
+	Ladder
+	Lantern
+	Mace
+	Mask
+	Mirror
+	Moon
+	Pit
+	Portal
+	Ration
+	Robe
+	Shackle
+	Shield
+	Shiv
+	Shrine
+	Skull
+	Snare
+	Spear
+	Staff
+	Star
+	Sun
+	Sword
+	Temple
+	Tiara
+	Tome
+	Torc
+	Torch
+	Trap
+	Vestment
+	Weapon
+REFOBJECTPLURAL
+	Armors
+	Arrows
+	Axes
+	Blades
+	Bones
+	Books
+	Bows
+	Candles
+	Chains
+	Chambers
+	Chimes
+	Cloaks
+	Clubs
+	Coins
+	Crowns
+	Crystals
+	Doors
+	Dungeons
+	Gates
+	Gauntlets
+	Gems
+	Glasses
+	Gloves
+	Goblets
+	Grails
+	Helms
+	Holes
+	Idols
+	Knives
+	Ladders
+	Lanterns
+	Maces
+	Masks
+	Mirrors
+	Moons
+	Pits
+	Portals
+	Rations
+	Robes
+	Shackles
+	Shields
+	Shivs
+	Shrines
+	Skulls
+	Snares
+	Spears
+	Staves
+	Stars
+	Suns
+	Swords
+	Temples
+	Tiaras
+	Tomes
+	Torcs
+	Torches
+	Traps
+	Vestments
+	Weapons
+REFOBJECTELEMENT
+	Acid
+	Air
+	Blood
+	Bone
+	Bronze
+	Cold
+	Copper
+	Crystal
+	Darkness
+	Diamond
+	Dust
+	Earth
+	Energy
+	Ether
+	Fire
+	Flame
+	Flesh
+	Force
+	Frost
+	Gold
+	Good
+	Heat
+	Ice
+	Lava
+	Light
+	Lightning
+	Magic
+	Magma
+	Mana
+	Metal
+	Muck
+	Mud
+	Nothing
+	Ooze
+	Platinum
+	Ruby
+	Sapphire
+	Silver
+	Slime
+	Sludge
+	Sound
+	Spirit
+	Stone
+	Thought
+	Time
+	Venom
+	Voidness
+	Water
+	Wind
+REFOJBECTELEMETNBEING
+	Agility
+	Anger
+	Barbarism
+	Benevolence
+	Caring
+	Charisma
+	Charisma
+	Cleverness
+	Compassion
+	Corruption
+	Courage
+	Cowardice
+	Cruelty
+	Cunning
+	Desire
+	Dexterity
+	Drunkenness
+	Family
+	Generosity
+	Greed
+	Happiness
+	Hatefulness
+	Health
+	History
+	Honor
+	Hunger
+	Infamy
+	Innocence
+	Insanity
+	Intelligence
+	Intoxication
+	Kindness
+	Knowledge
+	Lineage
+	Lust
+	Ruthlessness
+	Sadism
+	Sadness
+	Sanity
+	Serenity
+	Slyness
+	Viciousness
+	Virtue
+REFOBJECTABSTRACT
+	Accuracy
+	Absorbing
+	Alertness
+	Assailing
+	Balance
+	Barbs
+	Blending
+	Blinding
+	Blocking
+	Blur
+	Breathing
+	Brilliance
+	Building
+	Carnage
+	Chaos
+	Choking
+	Clairaudience
+	Clairvoyance
+	Climbing
+	Closing
+	Closure
+	Construction
+	Control
+	Craftsmanship
+	Curing
+	Cursing
+	Death
+	Defending
+	Defense
+	Deflection
+	Devouring
+	Dexterity
+	Digging
+	Disappearance
+	Displacement
+	Disruption
+	Distance
+	Divination
+	Doom
+	Dreaming
+	Dryness
+	Dust
+	Ease
+	Elimination
+	Enchantment
+	Entanglement
+	Etherealness
+	Evasion
+	Everburning
+	Evocation
+	Excellence
+	Falling
+	Falsehood
+	Fertility
+	Flaying
+	Flying
+	Fortification
+	Fortune
+	Gender-reversal
+	Ghosttouch
+	Glibness
+	Greed
+	Guarding
+	Haunting
+	Healing
+	Health
+	Hearing
+	Heroism
+	Hiding
+	Holding
+	Hope
+	Horror
+	Illness
+	Infertility
+	Influence
+	Inversion
+	Invisibility
+	Invulnerability
+	Jump
+	Law
+	Leadership
+	Levitation
+	Lifedraining
+	Measure
+	Misfortune
+	Motion
+	Muteness
+	Necromancy
+	Nondetection
+	Opening
+	Opposition
+	Pacing
+	Perfection
+	Performance
+	Pestilence
+	Possession
+	Power
+	Precision
+	Preservation
+	Projection
+	Puncturing
+	Purity
+	Quality
+	Radiance
+	Readiness
+	Reflection
+	Resistance
+	Resurrection
+	Returning
+	Revealing
+	Romance
+	Rulership
+	Scent
+	Security
+	Seeing
+	Sharpness
+	Shielding
+	Shocking
+	Sight
+	Simplicity
+	Skill
+	Sliperiness
+	Smiting
+	Sneaking
+	Sounding
+	Spikes
+	Splendor
+	Springing
+	Stability
+	Stealth
+	Storage
+	Strangulation
+	Strength
+	Striding
+	Submission
+	Subtlety
+	Sustenance
+	Tactics
+	Telepathy
+	Terror
+	Terror
+	Thawing
+	Thieving
+	Thorns
+	Timelessness
+	Trickery
+	Triumph
+	Truth
+	Tunneling
+	Victory
+	Viciousness
+	Warding
+	Warmth
+	Warning
+	Waterwalking
+	Wealth
+	Worth
+	Wounding
+//BEINGS
+REFBEING
+	Amazon
+	Angel
+	Arch-angel
+	Archmagi
+	Barbarian
+	Bear
+	Berserker
+	Canine
+	Cat
+	Chameleon
+	Demon
+	Dragon
+	Drake
+	Dwarf
+	Eagle
+	Elf
+	Feline
+	Fish
+	Ghost
+	Gnome
+	Goblin
+	Golem
+	Haunt
+	Human
+	Humanoid
+	Insect
+	Kraken
+	Lizard
+	Ogre
+	Sea Serpent
+	Serpent
+	Snake
+	Specter
+	Titan
+	Triton
+	Undead
+	Viper
+	Wolf
+	Wyrm
+REFBEINGPOSESSIVE
+	Amazon's
+	Angel's
+	Arch-angel's
+	Archmagi's
+	Barbarian's
+	Bear's
+	Berserker's
+	Canine's
+	Cat's
+	Chameleon's
+	Demon's
+	Dragon's
+	Drake's
+	Dwarf's
+	Eagle's
+	Elf's
+	Feline's
+	Fish's
+	Ghost's
+	Gnome's
+	Goblin's
+	Golem's
+	Haunt's
+	Human's
+	Humanoid's
+	Insect's
+	Kraken's
+	Lizard's
+	Ogre's
+	Sea Serpent's
+	Serpent's
+	Snake's
+	Spectre's
+	Titan's
+	Triton's
+	Undead's
+	Viper's
+	Wolf's
+	Wyrm's
+REFBEINGPLURAL
+	Amazons
+	Angels
+	Arch-angels
+	Archmagi
+	Barbarians
+	Bears
+	Berserkers
+	Canines
+	Cats
+	Chameleons
+	Demons
+	Dragons
+	Drakes
+	Dwarves
+	Eagles
+	Elves
+	Felines
+	Fish
+	Ghosts
+	Gnomes
+	Goblins
+	Golems
+	Haunts
+	Humans
+	Humanoids
+	Insects
+	Krakens
+	Lizards
+	Ogres
+	Sea Serpents
+	Serpents
+	Snakes
+	Spectres
+	Titans
+	Tritons
+	Undead
+	Vipers
+	Wolves
+	Wyrms
+REFBEINGPLURALPOSESSIVE
+	Amazons'
+	Angels'
+	Arch-angels'
+	Archmagi'
+	Barbarians'
+	Bears'
+	Berserkers'
+	Canines'
+	Cats'
+	Chameleons
+	Demons'
+	Dragons'
+	Drakes'
+	Dwarves'
+	Eagles'
+	Elves'
+	Felines'
+	Fish's
+	Ghosts'
+	Gnomes'
+	Goblins'
+	Golems'
+	Haunts'
+	Humans'
+	Humanoids'
+	Insects'
+	Krakens'
+	Lizards'
+	Ogres'
+	Sea Serpents'
+	Serpents'
+	Snakes'
+	Spectres'
+	Titans'
+	Tritons'
+	Undead's
+	Vipers'
+	Wolves'
+	Wyrms'
+REFBEINGABSTRACT
+	Animal
+	Annihilator
+	Archer
+	Artist
+	Assasin
+	Bane
+	Beast
+	Beater
+	Breaker
+	Builder
+	Caretaker
+	Carver
+	Caster
+	Cleric
+	Climber
+	Conjurer
+	Constructor
+	Consumer
+	Corruptor
+	Crafter
+	Creator
+	Crusader
+	Crusher
+	Dancer
+	Defender
+	Destroyer
+	Divinity
+	Dreamer
+	Eater
+	Evoker
+	Executioner
+	Fighter
+	Finder
+	Fletcher
+	Gibberer
+	God
+	Goddess
+	Gravedigger
+	Haunter
+	Healer
+	Hearer
+	Hunter
+	Invoker
+	Joiner
+	Journeyman
+	Keeper
+	Killer
+	King
+	Knight
+	Lady
+	Leader
+	Lord
+	Lover
+	Master
+	Messiah
+	Monk
+	Monster
+	Necromancer
+	Nomad
+	Opener
+	Priest
+	Priestess
+	Queen
+	Quester
+	Returner
+	Ruler
+	Saint
+	Savior
+	Screamer
+	Seeker
+	Seer
+	Silencer
+	Sinner
+	Slayer
+	Soldier
+	Soul
+	Speaker
+	Spirit
+	Strangler
+	Summoner
+	Swimmer
+	Thinker
+	Traitor
+	Traveller
+	Undertaker
+	Victor
+	Walker
+	Wanderer
+	Wizard
+	Writer
+REFBEINGABSTRACTPOSESSIVE
+	Animal's
+	Annihilator's
+	Archer's
+	Artist's
+	Assasin's
+	Bane's
+	Beast's
+	Beater's
+	Breaker's
+	Builder's
+	Caretaker's
+	Carver's
+	Caster's
+	Cleric's
+	Climber's
+	Conjurer's
+	Constructor's
+	Consumer's
+	Corruptor's
+	Crafter's
+	Creator's
+	Crusader's
+	Crusher's
+	Dancer's
+	Defender's
+	Destroyer's
+	Divinity's
+	Dreamer's
+	Eater's
+	Evoker's
+	Executioner's
+	Fighter's
+	Finder's
+	Fletcher's
+	Gibberer's
+	Goddess's
+	God's
+	Gravedigger's
+	Haunter's
+	Healer's
+	Hearer's
+	Hunter's
+	Invoker's
+	Joiner's
+	Journeyman's
+	Keeper's
+	Killer's
+	King's
+	Knight's
+	Lady's
+	Leader's
+	Lord's
+	Lover's
+	Master's
+	Messiah's
+	Monk's
+	Monster's
+	Necromancer's
+	Nomad's
+	Opener's
+	Priestess's
+	Priest's
+	Queen's
+	Quester's
+	Returner's
+	Ruler's
+	Saint's
+	Savior's
+	Screamer's
+	Seeker's
+	Seer's
+	Silencer's
+	Sinner's
+	Slayer's
+	Soldier's
+	Soul's
+	Speaker's
+	Spirit's
+	Strangler's
+	Summoner's
+	Swimmer's
+	Thinker's
+	Traitor's
+	Traveller's
+	Undertaker's
+	Victor's
+	Walker's
+	Wanderer's
+	Wanderer's
+	Wizard's
+	Writer's
+REFBEINGABSTRACTPLURAL
+	Animals
+	Annihilators
+	Archers
+	Artists
+	Assasins
+	Banes
+	Beasts
+	Beaters
+	Breakers
+	Builders
+	Caretakers
+	Carvers
+	Casters
+	Clerics
+	Climbers
+	Conjurers
+	Constructors
+	Consumers
+	Corruptors
+	Crafters
+	Creators
+	Crusaders
+	Crushers
+	Dancers
+	Defenders
+	Destroyers
+	Divinities
+	Dreamers
+	Eaters
+	Evokers
+	Executioners
+	Fighters
+	Finders
+	Fletchers
+	Gibberers
+	Goddesses
+	Gods
+	Gravediggers
+	Haunters
+	Healers
+	Hearers
+	Hunters
+	Invokers
+	Joiners
+	Journeymen
+	Keepers
+	Killers
+	Kings
+	Knights
+	Ladies
+	Leaders
+	Lords
+	Lovers
+	Masters
+	Messiahs
+	Monks
+	Monsters
+	Necromancers
+	Nomads
+	Openers
+	Priestesses
+	Priests
+	Queens
+	Questers
+	Returners
+	Rulers
+	Saints
+	Saviors
+	Screamers
+	Seekers
+	Seers
+	Silencers
+	Sinners
+	Slayers
+	Soldiers
+	Souls
+	Speakers
+	Spirits
+	Stranglers
+	Summoners
+	Swimmers
+	Thinkers
+	Traitors
+	Travellers
+	Undertakers
+	Victors
+	Walkers
+	Wanderers
+	Wanderers
+	Wizards
+	Writers
+REFBEINGABSTRACTPLURALPOSESSIVE
+	Animals'
+	Annihilators'
+	Archers'
+	Artists'
+	Assasins'
+	Banes'
+	Beasts'
+	Beaters'
+	Breakers'
+	Builders'
+	Caretakers'
+	Carvers'
+	Casters'
+	Clerics'
+	Climbers'
+	Conjurers'
+	Constructors'
+	Consumers'
+	Corruptors'
+	Crafters'
+	Creators'
+	Crusaders'
+	Crushers'
+	Dancers'
+	Defenders'
+	Destroyers'
+	Divinities'
+	Dreamers'
+	Eaters'
+	Evokers'
+	Executioners'
+	Fighters'
+	Finders'
+	Fletchers'
+	Gibberers'
+	Goddesses'
+	Gods'
+	Gravediggers'
+	Haunters'
+	Healers'
+	Hearers'
+	Hunters'
+	Invokers'
+	Joiners'
+	Journeymen's
+	Keepers'
+	Killers'
+	Kings'
+	Knights'
+	Ladies'
+	Leaders'
+	Lords'
+	Lovers'
+	Masters'
+	Messiahs'
+	Monks'
+	Monsters'
+	Necromancers'
+	Nomads'
+	Openers'
+	Priestesses'
+	Priests'
+	Queens'
+	Questers'
+	Returners'
+	Rulers'
+	Saints'
+	Saviors'
+	Screamers'
+	Seekers'
+	Seers'
+	Silencers'
+	Sinners'
+	Slayers'
+	Soldiers'
+	Souls'
+	Speakers'
+	Spirits'
+	Stranglers'
+	Summoners'
+	Swimmers'
+	Thinkers'
+	Traitors'
+	Travellers'
+	Undertakers'
+	Victors'
+	Walkers'
+	Wanderers'
+	Wanderers'
+	Wizards'
+	Writers'
+//FORMS
+REFFORM
+	Arrow
+	Assault
+	Aura
+	Ball
+	Barrier
+	Beam
+	Blast
+	Bolt
+	Breath
+	Chain
+	Circle
+	Cloud
+	Disk
+	Field
+	Gush
+	Gyser
+	Hail
+	Hand
+	Lance
+	Net
+	Orb
+	Rain
+	Ring
+	Shield
+	Span
+	Sphere
+	Storm
+	Touch
+	Wall
+	Web
+	Zone
+REFFORMPLURAL
+	Arrows
+	Assaults
+	Auras
+	Balls
+	Barriers
+	Beams
+	Blasts
+	Bolts
+	Breaths
+	Chains
+	Circles
+	Clouds
+	Disks
+	Fields
+	Gushes
+	Gysers
+	Hail
+	Hands
+	Lances
+	Nets
+	Orbs
+	Rains
+	Rings
+	Shields
+	Spans
+	Spheres
+	Storms
+	Touches
+	Walls
+	Webs
+	Zones
+//MAGICAL ENTITIES
+REFMENTITY
+	Abjuration
+	Calling
+	Casting
+	Ceremony
+	Chant
+	Charm
+	Conjuration
+	Curse
+	Divination
+	Evocation
+	Exorcism
+	Glamour
+	Hex
+	Illusion
+	Incatation
+	Invocation
+	Rite
+	Ritual
+	Rune
+	Sigil
+	Sorcery
+	Spell
+	Witchery
+	Working
+REFMENTITYPLURAL
+	Abjurations
+	Callings
+	Castings
+	Ceremonies
+	Chants
+	Charms
+	Conjurations
+	Curses
+	Divinations
+	Evocations
+	Exorcisms
+	Glamours
+	Hexes
+	Illusions
+	Incatations
+	Rites
+	Rituals
+	Runes
+	Sigils
+	Sorceries
+	Spells
+	Witcheries
+	Workings
+// ACTIONS
+REFACTIONOBJECT
+	Alteration
+	Annihilation
+	Breaking
+	Cleaning
+	Cleansing
+	Creation
+	Cursing
+	Defilement
+	Deflection
+	Destruction
+	Detection
+	Dissolving
+	Duplication
+	Enlargement
+	Envenoming
+	Forging
+	Marking
+	Melting
+	Poisoning
+	Purification
+	Repairing
+	Restoring
+	Shrinking
+	Tracking
+	Transformation
+	Transmutation
+REFACTIONELEMENT
+	Absorbtion
+	Alteration
+	Conjuration
+	Control
+	Deflection
+	Negation
+	Transformation
+REFACTIONBEING
+	Calling
+	Control
+	Hypnotism
+	Killing
+	Seduction
+	Seeking
+	Slaying
+	Summoning
+// AFFECTORS
+REFAFFECTOROBJECT
+	Alter
+	Annihilate
+	Break
+	Clean
+	Clense
+	Create
+	Curse
+	Defile
+	Deflect
+	Destroy
+	Detect
+	Dissolve
+	Duplicate
+	Enlarge
+	Envenom
+	Forge
+	Mark
+	Melt
+	Poison
+	Purify
+	Repair
+	Restore
+	Shrink
+	Track
+	Transform
+	Transmute
+REFAFFECTORELEMENT
+	Absorbs
+	Alter
+	Conjure
+	Control
+	Deflect
+	Negate
+	Transform
+REFAFFECTORBEING
+	Become
+	Call
+	Control
+	Hypnotise
+	Kill
+	Seduce
+	Seek
+	Slay
+	Summon
+//NUMERICS
+REFNUMERIC
+	<REFNUMERICLOW>
+	<REFNUMERICHIGH>
+	<REFNUMERICVERYHIGH>
+	<REFNUMERICMAX>
+REFNUMERICLOW
+	Two
+	Three
+	Four
+	Five
+	Six
+	Seven
+	Eight
+	Nine
+REFNUMERICHIGH
+	Ten
+	Twenty
+	Thirty
+	Forty
+	Fifty
+	Sixty
+	Seventy
+	Eighty
+	Ninety
+REFNUMERICVERYHIGH
+	One Hundred
+	One Thousand
+REFNUMERICMAX
+	Infinite
+	Uncountable

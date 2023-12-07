@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 .ff6-dialog {
-  background: linear-gradient(135deg, #0f1340 0%, #131949 50%, #172357 100%);
+  background-color: #0f1419;
   border: 2px solid #ffd700;
   color: #ffffff;
   font-family: "Roboto Mono", monospace, Arial, sans-serif;
@@ -9,7 +9,7 @@
 }
 
 .ff6-dialog-header {
-  background-color: #131949;
+  background-color: #1e90ff;
   color: #ffffff;
   text-align: center;
   padding: 10px;
@@ -20,16 +20,14 @@
 }
 
 .ff6-dialog-button {
-  background-color: #162053;
+  background-color: #ffd700;
   color: white !important;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  margin: 3px;
-  text-align: center;
-  vertical-align: middle;
+  margin: 5px;
 }
 
 .ff6-dialog-button:hover {
-  background-color: #182359;
+  background-color: #ff8c00;
 }
