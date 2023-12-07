@@ -17,8 +17,6 @@ Please note that licensed Fabula Ultima content is not provided with this system
 | **Spice Up My Fight**      | Generates obstacles, gimmicks, or environmental effects to enhance fights. Damage scales with Group Level, set in settings. Identified by the pepper icon in the tools menu.   |
 
 
-Install: https://github.com/infrastructureaxolotl/lfd-lookfar-gm-assistant/releases/download/v0.5.0-alpha-prerelease/module.json
-
 ## Feedback
 
 Please report any bugs or suggest features using the Issues tab on GitHub.
