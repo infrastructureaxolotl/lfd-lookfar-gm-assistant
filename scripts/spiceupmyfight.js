@@ -11,6 +11,10 @@ Hooks.once("init", async () => {
   ).appendTo("head");
 
   Hooks.on("renderApplication", (app, html, data) => {
+    window.showSpiceUp = {
+      showSpiceDialog: showSpiceDialog
+    };
+
     if (!document.getElementById("floating-fightSpice-button")) {
       let icon = $('<i class="fa-solid fa-pepper-hot"></i>');
 
@@ -173,7 +177,7 @@ Hooks.once("init", async () => {
         },
       },
       default: "keep",
-      close: () => {},
+      close: () => { },
     }).render(true);
   }
 

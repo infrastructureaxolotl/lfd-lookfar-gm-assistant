@@ -71,6 +71,10 @@ Hooks.once("init", async () => {
   });
 
   Hooks.on("renderApplication", (app, html, data) => {
+    window.showTravelCheck = {
+      showTravelCheckDialog: showTravelCheckDialog
+    };
+
     if (!document.getElementById("floating-travel-check-button")) {
       // Create an icon element for the button
       let icon = $('<i class="fa-solid fa-person-hiking"></i>');
@@ -147,21 +151,21 @@ let formHtml = `
     <table class="travel-check-table">
       <tbody>
         ${Object.entries(TravelRolls.travelChecks)
-          .map(
-            ([key, value], index) => `
+    .map(
+      ([key, value], index) => `
           <tr>
             <td>
               <label>
                 <input type="radio" name="travelCheck" value="${value}" ${
-              index === 0 ? "checked" : ""
-            }>
+                  index === 0 ? "checked" : ""
+        }>
                 ${key} (${value})
               </label>
             </td>
           </tr>
         `
-          )
-          .join("")}
+    )
+    .join("")}
       </tbody>
     </table>
   </form>
@@ -464,8 +468,8 @@ function generateDiscovery() {
       <tr>
         <td style="padding: 5px; border: 1px solid #ddd;"><strong>Keywords:</strong></td>
         <td style="padding: 5px; border: 1px solid #ddd;">${keywords.join(
-          ", "
-        )}</td>
+    ", "
+  )}</td>
       </tr>
     </table>
   `;
